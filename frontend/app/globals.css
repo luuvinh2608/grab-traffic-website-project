@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Link the mapbox css */
+@import url("https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css");
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
