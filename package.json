@@ -1,0 +1,16 @@
+{
+  "name": "grab-traffic-website-project",
+  "version": "1.0.0",
+  "description": "This is a website built to monitor the air and traffic condition in HCM city as part of Grab Engineering Bootcamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "precommit": "cd frontend && npm run lint && npm run format-prettier"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^9.0.11"
+  }
+}
