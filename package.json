@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
-    "precommit": "cd frontend && npm run lint && npm run format-prettier"
+    "precommit": "cd frontend && npm run lint && npm run check-prettier && npm run format-prettier"
   },
   "author": "",
   "license": "ISC",
