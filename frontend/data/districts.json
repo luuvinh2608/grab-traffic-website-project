@@ -1,0 +1,100 @@
+{
+  "Districts": [
+    {
+      "Name": "District 1",
+      "Latitude": 10.7758,
+      "Longitude": 106.7,
+      "Details": "The central urban district, featuring major tourist attractions, government offices, and commercial centers."
+    },
+    {
+      "Name": "District 2",
+      "Latitude": 10.7915,
+      "Longitude": 106.7498,
+      "Details": "Known for its upscale residential areas and expatriate communities."
+    },
+    {
+      "Name": "District 3",
+      "Latitude": 10.7843,
+      "Longitude": 106.6841,
+      "Details": "A densely populated area known for its French colonial architecture."
+    },
+    {
+      "Name": "District 4",
+      "Latitude": 10.7667,
+      "Longitude": 106.7065,
+      "Details": "One of the smallest districts, known for its local seafood restaurants."
+    },
+    {
+      "Name": "District 5",
+      "Latitude": 10.7557,
+      "Longitude": 106.6634,
+      "Details": "Known as Chinatown, famous for its markets and Chinese temples."
+    },
+    {
+      "Name": "District 6",
+      "Latitude": 10.7469,
+      "Longitude": 106.6349,
+      "Details": "A more residential area with a significant Chinese community."
+    },
+    {
+      "Name": "District 7",
+      "Latitude": 10.7366,
+      "Longitude": 106.722,
+      "Details": "Known for the modern Phu My Hung area, popular with expatriates and middle-class Vietnamese."
+    },
+    {
+      "Name": "District 8",
+      "Latitude": 10.7241,
+      "Longitude": 106.6288,
+      "Details": "Primarily residential, less developed compared to other districts."
+    },
+    {
+      "Name": "District 9",
+      "Latitude": 10.8428,
+      "Longitude": 106.8283,
+      "Details": "Known for its high-tech park and educational institutions."
+    },
+    {
+      "Name": "District 10",
+      "Latitude": 10.774,
+      "Longitude": 106.6679,
+      "Details": "Known for its vibrant street food scene and bustling markets."
+    },
+    {
+      "Name": "District 11",
+      "Latitude": 10.7631,
+      "Longitude": 106.6433,
+      "Details": "Residential with famous sports complexes and parks."
+    },
+    {
+      "Name": "District 12",
+      "Latitude": 10.8672,
+      "Longitude": 106.6537,
+      "Details": "A developing suburban area with a mix of residential and industrial zones."
+    },
+    {
+      "Name": "Binh Thanh District",
+      "Latitude": 10.8047,
+      "Longitude": 106.7079,
+      "Details": "Mix of residential and commercial areas, connecting the city center to the outskirts."
+    },
+    {
+      "Name": "Phu Nhuan District",
+      "Latitude": 10.7995,
+      "Longitude": 106.6801,
+      "Details": "Densely populated with a mix of residential and commercial developments."
+    },
+    {
+      "Name": "Tan Binh District",
+      "Latitude": 10.8019,
+      "Longitude": 106.6538,
+      "Details": "Home to Tan Son Nhat International Airport and several residential areas."
+    },
+    {
+      "Name": "Go Vap District",
+      "Latitude": 10.8388,
+      "Longitude": 106.6656,
+      "Details": "Predominantly residential and one of the most populous districts."
+    }
+  ]
+}
