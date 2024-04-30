@@ -1,130 +1,126 @@
 Ba Tháng Hai – Sư Vạn Hạnh separator 10.7697784337206 106.670830249786 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63ae7a50bfd3d90017e8f2b2
-Nguyễn Văn Trỗi - Trần Huy Liệu separator 10.794472307568 106.677948832512 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58b571c817139d0010f35d5d
-Phổ Quang - Hoàng Minh Giám separator 10.8079619154301 106.672879457474 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58df4d95dc195800111e04b9
-Lê Văn Sỹ - Huỳnh Văn Bánh separator 10.7918902432446 106.671452522278 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cd4ee766c880017188946
-Điện Biên Phủ - Hai Bà Trưng separator 10.7866311946675 106.693720221519 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad00
-Đinh Tiên Hoàng - Võ Thị Sáu 1 separator 10.7917743133057 106.695774793625 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a823e425058170011f6eaa4
-Lý Thái Tổ - Nguyễn Đình Chiểu separator 10.7662581006404 106.678780317307 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63ae763bbfd3d90017e8f0c4&t=1714386492634
-Phạm Văn Đồng - Kha Vạn Cân (hướng đi Sân bay) separator 10.8411932946322 106.743823885918 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cda6a766c880017188960
-Nam Kỳ Khởi Nghĩa - Trần Quốc Toản separator 10.7863150164711 106.687223911285 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58e49ff8d9d6200011e0b9d4
-Đinh Tiên Hoàng - Võ Thị Sáu 2 separator 10.7919218604929 106.695785522461 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a8241105058170011f6eaa6
-Lý Tự Trọng - Hai Bà Trưng 2 separator 10.779137682017 106.702335476875 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5ad0621c98d8fc001102e268
-Võ Văn Kiệt - Nguyễn Văn Cừ 2 separator 10.7536415 106.6864407 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56de42f611f398ec0c48128c
-Hồng Bàng - Phù Đổng Thiên Vương separator 10.7546955197447 106.662520766258 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b3c274bfd3d90017e9ab93&t=1714385442018
-Võ Văn Kiệt - Cầu Chà Và 2 (trên cầu) separator 10.7489404145267 106.660348176956 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5b5995a3fd4edb0019c7d9ab
-Ba Tháng Hai - Lý Thường Kiệt 3 separator 10.7644610285251 106.659817099571 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63ae7b3cbfd3d90017e8f34d
-Nguyễn Thị Minh Khai - Đinh Tiên Hoàng 1 separator 10.7866101161314 106.701568365097 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=6318283cc9eae60017a19f0c
-Nút giao Ngã sáu Cộng Hòa separator 10.765389 106.681205 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515acf6
-Cầu vượt Sóng Thần 2 separator 10.8743050851613 106.748507022858 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58746488b807da0011e33cd7
-Mai Chí Thọ - Nguyễn Cơ Thạch 1 separator 10.7732144077704 106.722586154938 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5822b5ededeb6c0012a2d66a
-Ba Tháng Hai - Lê Đại Hành 1 separator 10.7621527500863 106.657199263573 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63ae7be0bfd3d90017e8f3a8
-Lê Văn Việt - Hoàng Hữu Nam separator 10.8502078623705 106.813673973084 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b54a04bfd3d90017ea783e
-Cầu Sài Gòn (10) separator 10.7985614089434 106.726276874542 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b54f70bfd3d90017ea7c86
-Nút giao Ngã sáu Phù Đổng separator 10.771135 106.693342 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad0c
-Đường hầm - Ký Con separator 10.7646665593097 106.699186563492 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56f8e708025e9511002786cb&t=1714386504177
-Mai Chí Thọ - Tố Hữu (C6) separator 10.7713172490313 106.716717481613 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a10c79f02eb490011a0b0dd
-Nguyễn Thị Minh Khai - Mạc Đĩnh Chi separator 10.784426 106.699659 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad19
-Võ Thị Sáu - Hai Bà Trưng separator 10.7878590168447 106.691815853119 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad01
-Cầu Sài Gòn 9 (Bình Thạnh - Thủ Đức) separator 10.7985614089434 106.726319789886 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58abbf72bd82540010390ba4
-Nút giao Phú Nhuận 1 (Phan Đình Phùng) separator 10.7990461956223 106.680378913879 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58ad6961bd82540010390be5
-Cầu Sài Gòn 5 (dạ cầu Thủ Đức) separator 10.7991621227557 106.729398965836 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58abbee5bd82540010390ba2
-Lý Chính Thắng - Trương Định separator 10.7825155824841 106.683688759804 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515acfe
-Yên Thế - Bạch Đằng separator 10.8141637700114 106.668593287468 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58df4e22dc195800111e04bb
-Nam Kỳ Khởi Nghĩa - Lý Chính Thắng separator 10.7886020312638 106.6847884655 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58e49e3dd9d6200011e0b9d1
-Lý Thường Kiệt - Lạc Long Quân separator 10.7904463853615 106.652473211288 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cdc57766c88001718896e
-Lê Văn Việt - Man Thiện separator 10.8452343413582 106.786707043648 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5ad0679598d8fc001102e274
-Nút giao Bốn Xã 3 (Lê Văn Quới) separator 10.773841521503 106.621397137642 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a824b6c5058170011f6eaab
-Mai Chí Thọ - Đồng Văn Cống 1 separator 10.7878800952932 106.749606728554 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58175ac4edeb6c0012a2d5bb
-Nguyễn Oanh - Phan Văn Trị (2) separator 10.8310719980749 106.676913499832 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a824f975058170011f6eab8
-Nút giao Bốn Xã 1 (Bình Long) separator 10.7738836803625 106.621649265289 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a824c3e5058170011f6eaae
-Nút giao Công Trường Dân Chủ separator 10.777768 106.68202 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515acf9
-Nguyễn Hữu Cảnh - Ngô Tất Tố (Cầu Thủ Thiêm 1) separator 10.7892027649838 106.715097427368 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=587470c2b807da0011e33ce4
-Lê Lợi - Pasteur separator 10.774816 106.700909 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad0d
-Tô Ký (Tỉnh lộ 15) - Hẻm 146 separator 10.8486167661312 106.633611917496 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=589ad89eb3bf7600110283ac
-Đường hầm (Đầu hầm Tp Thủ Đức) separator 10.7710432140034 106.715902090073 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5b87c386ca057700116404a6
-Võ Văn Ngân - Đặng Văn Bi separator 10.8511456568495 106.757980585098 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cd542766c880017188948
-Lý Tự Trọng - Hai Bà Trưng 1 separator 10.7791113331904 106.702115535736 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a823d555058170011f6eaa2
-Hoàng Văn Thụ - Trần Quốc Hoàn separator 10.8013067666529 106.662268638611 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=587c8183b807da0011e33d3f
-Nguyễn Văn Cừ - Trần Hưng Đạo 3 separator 10.7568773715932 106.684874296188 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5b632950fd4edb0019c7dc07
-Đinh Tiên Hoàng - Nguyễn Đình Chiểu separator 10.788566 106.699558 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad06
-Đinh Tiên Hoàng - Nguyễn Đình Chiểu separator 10.788566 106.699558 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad06&t=1714386062697
-Nguyễn Thị Định - Thân Văn Nhiếp separator 10.7903304548658 106.754236221313 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b65e6abfd3d90017eaa361
-Trường Sơn - Phan Đình Giót separator 10.8048741133609 106.664215922356 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56f11afc3ac17b11001c504e
-Đường hầm (Đầu hầm Tp Thủ Đức) separator 10.7705847317646 106.713402271271 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5b87c386ca057700116404a6
-Nguyễn Văn Linh - Nguyễn Hữu Thọ (1) separator 10.7291234621994 106.700549125671 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a8259035058170011f6eacf
-Phạm Văn Đồng - Hiệp Bình (hướng đi Sân bay) separator 10.8374050930507 106.732848286629 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cd8e2766c880017188958
-Ung Văn Khiêm - Nguyễn Gia Trí (D2) separator 10.8075192972885 106.716395616531 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=586e2995f9fab7001111b0b5
-Mai Chí Thọ - Đồng Văn Cống 2 separator 10.7876851195878 106.74994468689 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56de42f611f398ec0c481282
-Mai Chí Thọ - Võ Nguyên Giáp (Cát Lái cầu B) separator 10.8062546704304 106.754064559937 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56de42f611f398ec0c48127e
-Trường Sơn - Ga Quốc Nội 1 separator 10.8128675561166 106.664929389954 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56f8d743025e9511002786c5
-Vĩnh Lộc - Nguyễn Thị Tú 1 separator 10.8135788937036 106.579173803329 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a82602c5058170011f6ead9
-Phan Đăng Lưu - Nơ Trang Long separator 10.8031879281753 106.694852113724 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=587ee7d7b807da0011e33d55
-Trường Sơn - Ga Quốc Tế separator 10.8136315853096 106.665363907814 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56df8544c062921100c143e6
-Nam Kỳ Khởi Nghĩa - Điện Biên Phủ 2 separator 10.7833376554873 106.690700054169 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58af8d68bd82540010390c2e&t=1714386511703
-Nguyễn Duy Trinh - Bưng Ông Thoàn separator 10.7912052020479 106.796894073486 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b54898bfd3d90017ea77ae
-Đỗ Xuân Hợp - Tây Hòa separator 10.8244331690453 106.769192218781 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b549b8bfd3d90017ea782c
-Đường hầm (Đầu hầm Tp Thủ Đức) separator 10.7706637804763 106.714040637016 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5b87c386ca057700116404a6
-Nguyễn Duy Trinh - Võ Chí Công 2 separator 10.7909838807122 106.792902946472 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b54909bfd3d90017ea77e4
-Cao tốc LTDG - Đỗ Xuân Hợp 1 separator 10.7965537514336 106.778896450996 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d9de43b766c880017188cb6
-Mai Chí Thọ - Lương Định Của 1 separator 10.791531914198 106.751103401184 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56de42f611f398ec0c48127f
-Yên Thế - Hồng Hà separator 10.8133259738659 106.668566465378 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58df5016dc195800111e04bd
-Trường Chinh - Đồng Đen separator 10.7970385413523 106.645912528038 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cdac3766c880017188962
-Nguyễn Văn Trỗi - Huỳnh Văn Bánh separator 10.7928914544929 106.679853200912 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=587ef5dfb807da0011e33d59
-Hoàng Văn Thụ - Cộng Hòa separator 10.8006744408059 106.660782694817 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cdbdc766c88001718896a
-Quang Trung - Lê Văn Thọ (2) separator 10.8366990807787 106.658325791359 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a824e465058170011f6eab4
-Kha Vạn Cân - Đường Số 2 separator 10.8418834903115 106.746854782104 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b3c9bfbfd3d90017e9b039
-Nguyễn Biểu - Cầu Chữ Y separator 10.75113811876 106.68364584446 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a82439f5058170011f6eaa9
-Phạm Văn Đồng - Phan Văn Trị 2 separator 10.8207659432755 106.69480919838 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58d7c20ac1e33c00112b321c
-Cầu Sài Gòn 4 (Thủ Đức 1) separator 10.7997417577515 106.730428934097 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=589d0b74b3bf7600110283d4
-Trường Chinh - Âu Cơ separator 10.8019180137061 106.63648724556 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56df807bc062921100c143da
-Tô Hiến Thành – Sư Vạn Hạnh separator 10.7778940148849 106.665540933609 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63ae7a74bfd3d90017e8f2c7&t=1714386439947
-Quốc lộ 1 - Cao tốc Trung Lương separator 10.689411864849 106.592531204224 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58afdbaebd82540010390c48
-Cộng Hòa - Hoàng Hoa Thám separator 10.8013120360293 106.647366285324 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=662b57ec1afb9c00172d90e3
-Nam Kỳ Khởi Nghĩa - Võ Thị Sáu separator 10.784533873088 106.688543558121 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58af8a0bbd82540010390c25
-Quốc lộ 1 - Nguyễn Hữu Trí 2 separator 10.6965544326304 106.596699357033 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58afcd9bbd82540010390c41
-Tôn Đức Thắng - Lê Duẩn separator 10.7852927046947 106.703263521194 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58af9a07bd82540010390c3b
-Điện Biên Phủ - Đinh Tiên Hoàng separator 10.790705 106.697491 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad05
-Quốc Lộ 13 - Đinh Thị Thi 1 separator 10.8444440496827 106.718230247498 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=62da3e390637a10017d706ff
-Nguyễn Đình Chiểu - Trương Định separator 10.777922 106.689658 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad11
-Tôn Đức Thắng - Công trường Mê Linh separator 10.775301268578 106.70676112175 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=649da77ea6068200171a6dd4
-Nút giao Bốn Xã 2 (Hòa Bình) separator 10.7736939654481 106.62178337574 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a824c905058170011f6eab0
-Nguyễn Thị Minh Khai - Pasteur separator 10.780518 106.695957 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad16
-Lý Thường Kiệt - Tô Hiến Thành 2 separator 10.7708113380158 106.658003926277 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63ae7c73bfd3d90017e8f3ed
-Lạc Long Quân - Âu Cơ separator 10.7747690150491 106.647881269455 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cdc9d766c880017188970
-Xô Viết Nghệ Tĩnh - Nguyễn Xí 2 separator 10.8102803807443 106.712415218353 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a8254f25058170011f6eac5
-Lý Thường Kiệt - Tô Hiến Thành 1 separator 10.7704951431996 106.658336520195 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63ae7c53bfd3d90017e8f3d8
-Trường Chinh - Tây Thạnh 1 separator 10.8199228965258 106.630790233612 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5874796db807da0011e33cf7
-Nút giao Công Trường Dân Chủ separator 10.777664 106.681336 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515acf9
-Pasteur - Hàm Nghi separator 10.770674 106.702639 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad1e
-Nguyễn Chí Thanh - Ngô Quyền separator 10.759206770879 106.665605306625 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=649da419a6068200171a6c90
-Nút giao Ngã sáu Cộng Hòa separator 10.765059 106.68172 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515acf6
-Nút giao Hàng Xanh 1 (Viện Máy tính) separator 10.8016545453012 106.71106338501 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d9ddd49766c880017188c94
-Phạm Văn Đồng - Nguyễn Xí (hướng đi Sân bay) separator 10.8230474266509 106.702968478203 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cd767766c880017188950
-Nam Kỳ Khởi Nghĩa - Nguyễn Đình Chiểu separator 10.7814721788992 106.692835092545 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad03
-Nguyễn Thị Minh Khai - Nguyễn Bỉnh Khiêm separator 10.7887074232314 106.703531742096 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=631828cac9eae60017a19f50
-Đồng Văn Cống - Phan Văn Đáng separator 10.7785053 106.7572618 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56de42f611f398ec0c48129e
-Nút giao Cây Gõ 2 (Minh Phụng) separator 10.7550275416962 106.643267869949 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cd372766c880017188940
-Phạm Văn Đồng - Nguyễn Xí (hướng đi Thủ Đức) separator 10.8228313977916 106.703445911407 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cd70e766c88001718894e
-Đinh Bộ Lĩnh - Bạch Đằng 3 separator 10.8028664980496 106.709464788437 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a606a958576340017d06621
-Nguyễn Tất Thành - Cảng SG (Q7-Q4) separator 10.7592436616732 106.713917255402 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b6617ebfd3d90017eaa50b
-Võ Văn Kiệt - Phạm Phú Thứ separator 10.7413616378753 106.645520925522 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56de42f611f398ec0c481292
-Võ Thị Sáu - Bà Huyện Thanh Quan separator 10.7801863634439 106.684262752533 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515acfb
-Mai Chí Thọ - Võ Nguyên Giáp (Cát Lái cầu A) separator 10.8049847689326 106.752707362175 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56de42f611f398ec0c48127d
-Hải Thượng Lãn Ông - Cầu Chà Và separator 10.7505847415039 106.660031676292 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56de42f611f398ec0c48128d
-Lý Tự Trọng - Đồng Khởi separator 10.7778940148849 106.701037287712 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad14&t=1714386379639
-Nơ Trang Long - Nguyễn Huy Lượng (Bệnh viện Ung Bướu) separator 10.8053483512381 106.695023775101 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b66035bfd3d90017eaa48e
-Võ Thị Sáu - Pasteur separator 10.7860304558102 106.690008044243 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad04&t=1714386386724
-Võ Chí Công - Liên Phường 2 separator 10.8049478837466 106.791937351227 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b54aedbfd3d90017ea79c3
-Nguyễn Kiệm - Hồ Văn Huê separator 10.8062968247449 106.6783618927 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=586e20a0f9fab7001111b0a7
-BX Miền Đông - Đinh Bộ Lĩnh 1 separator 10.8168141411482 106.711433529854 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a8255a55058170011f6eac7
-Nam Kỳ Khởi Nghĩa -Nguyễn Thị Minh Khai 2 separator 10.7794696770349 106.695173978806 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58b5752e17139d0010f35d5f&t=1714386393457
-Hai Bà Trưng - Lê Duẩn separator 10.781431 106.699614 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad18&t=1714386399928
-Nguyễn Văn Linh - Quốc lộ 50 (1) separator 10.7199365991593 106.655665040016 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a82628e5058170011f6eadb
-Nút giao Bảy Hiền 2 (Hoàng Văn Thụ) separator 10.7931970867358 106.653615832329 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58747923b807da0011e33cf5&t=1714386445791
-Xô Viết Nghệ Tĩnh - Nguyễn Văn Lạc separator 10.7953154258079 106.709818840027 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b65fa9bfd3d90017eaa449
-Cách Mạng Tháng Tám – Hòa Hưng separator 10.7802232516687 106.677144169807 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=631955e7c9eae60017a1c30a&t=1714386431820
-Nguyễn Thái Sơn - Phan Văn Trị 2 separator 10.8262720340397 106.689149737358 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a6060e08576340017d0660f
-Quốc lộ 1 - Nguyễn Thị Tú separator 10.8161291568165 106.600910425186 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=584e738361cfea0012cf6951
-Đinh Bộ Lĩnh - Bạch Đằng 1 separator 10.8030720025958 106.710022687912 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a8253615058170011f6eabf
-Đinh Bộ Lĩnh - Bạch Đằng 2 separator 10.8030930799773 106.709395051003 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a8253bc5058170011f6eac1
-BX Miền Đông - Quốc Lộ 13 (2) separator 10.8172620146729 106.713198423386 separator separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a8256df5058170011f6eacb
+Lê Văn Sỹ - Huỳnh Văn Bánh separator 10.7918902432446 106.671452522278 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cd4ee766c880017188946
+Điện Biên Phủ - Hai Bà Trưng separator 10.7866311946675 106.693720221519 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad00
+Đinh Tiên Hoàng - Võ Thị Sáu 1 separator 10.7917743133057 106.695774793625 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a823e425058170011f6eaa4
+Nam Kỳ Khởi Nghĩa - Trần Quốc Toản separator 10.7863150164711 106.687223911285 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58e49ff8d9d6200011e0b9d4
+Đinh Tiên Hoàng - Võ Thị Sáu 2 separator 10.7919218604929 106.695785522461 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a8241105058170011f6eaa6
+Đinh Tiên Hoàng - Nguyễn Đình Chiểu separator 10.788566 106.699558 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad06
+Nguyễn Văn Trỗi - Huỳnh Văn Bánh separator 10.7928914544929 106.679853200912 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=587ef5dfb807da0011e33d59
+Điện Biên Phủ - Đinh Tiên Hoàng separator 10.790705 106.697491 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad05
+Nguyễn Thị Minh Khai - Nguyễn Bỉnh Khiêm separator 10.7887074232314 106.703531742096 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=631828cac9eae60017a19f50
+Nguyễn Văn Trỗi - Trần Huy Liệu separator 10.794472307568 106.677948832512 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58b571c817139d0010f35d5d
+Phổ Quang - Hoàng Minh Giám separator 10.8079619154301 106.672879457474 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58df4d95dc195800111e04b9
+Yên Thế - Hồng Hà separator 10.8133259738659 106.668566465378 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58df5016dc195800111e04bd
+Xô Viết Nghệ Tĩnh - Nguyễn Xí 2 separator 10.8102803807443 106.712415218353 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a8254f25058170011f6eac5
+BX Miền Đông - Đinh Bộ Lĩnh 1 separator 10.8168141411482 106.711433529854 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a8255a55058170011f6eac7
+Phạm Văn Đồng - Nguyễn Xí (hướng đi Thủ Đức) separator 10.8228313977916 106.703445911407 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cd70e766c88001718894e
+Nguyễn Thái Sơn - Phan Văn Trị 2 separator 10.8262720340397 106.689149737358 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a6060e08576340017d0660f
+Ung Văn Khiêm - Nguyễn Gia Trí (D2) separator 10.8075192972885 106.716395616531 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=586e2995f9fab7001111b0b5
+Trường Sơn - Ga Quốc Nội 1 separator 10.8128675561166 106.664929389954 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56f8d743025e9511002786c5
+Quang Trung - Lê Văn Thọ (2) separator 10.8366990807787 106.658325791359 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a824e465058170011f6eab4
+Quốc Lộ 13 - Đinh Thị Thi 1 separator 10.8444440496827 106.718230247498 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=62da3e390637a10017d706ff
+Trường Sơn - Ga Quốc Tế separator 10.8136315853096 106.665363907814 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56df8544c062921100c143e6
+Phạm Văn Đồng - Kha Vạn Cân (hướng đi Sân bay) separator 10.8411932946322 106.743823885918 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cda6a766c880017188960
+Lê Văn Việt - Hoàng Hữu Nam separator 10.8502078623705 106.813673973084 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b54a04bfd3d90017ea783e
+Nguyễn Oanh - Phan Văn Trị (2) separator 10.8310719980749 106.676913499832 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a824f975058170011f6eab8
+Tô Ký (Tỉnh lộ 15) - Hẻm 146 separator 10.8486167661312 106.633611917496 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=589ad89eb3bf7600110283ac
+Phạm Văn Đồng - Hiệp Bình (hướng đi Sân bay) separator 10.8374050930507 106.732848286629 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cd8e2766c880017188958
+Nút giao Ngã sáu Cộng Hòa separator 10.765059 106.68172 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515acf6
+Ba Tháng Hai - Lê Đại Hành 1 separator 10.7621527500863 106.657199263573 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63ae7be0bfd3d90017e8f3a8
+Cầu Sài Gòn (10) separator 10.7985614089434 106.726276874542 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b54f70bfd3d90017ea7c86
+Mai Chí Thọ - Đồng Văn Cống 2 separator 10.7876851195878 106.74994468689 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56de42f611f398ec0c481282
+Phan Đăng Lưu - Nơ Trang Long separator 10.8031879281753 106.694852113724 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=587ee7d7b807da0011e33d55
+Nguyễn Duy Trinh - Bưng Ông Thoàn separator 10.7912052020479 106.796894073486 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b54898bfd3d90017ea77ae
+Cộng Hòa - Hoàng Hoa Thám separator 10.8013120360293 106.647366285324 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=662b57ec1afb9c00172d90e3
+Nguyễn Duy Trinh - Võ Chí Công 2 separator 10.7909838807122 106.792902946472 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b54909bfd3d90017ea77e4
+Cao tốc LTDG - Đỗ Xuân Hợp 1 separator 10.7965537514336 106.778896450996 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d9de43b766c880017188cb6
+Nguyễn Biểu - Cầu Chữ Y separator 10.75113811876 106.68364584446 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a82439f5058170011f6eaa9
+Nguyễn Chí Thanh - Ngô Quyền separator 10.759206770879 106.665605306625 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=649da419a6068200171a6c90
+Nguyễn Tất Thành - Cảng SG (Q7-Q4) separator 10.7592436616732 106.713917255402 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b6617ebfd3d90017eaa50b
+Võ Văn Kiệt - Phạm Phú Thứ separator 10.7413616378753 106.645520925522 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56de42f611f398ec0c481292
+Hải Thượng Lãn Ông - Cầu Chà Và separator 10.7505847415039 106.660031676292 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56de42f611f398ec0c48128d
+Quốc lộ 1 - Nguyễn Hữu Trí 2 separator 10.6965544326304 106.596699357033 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58afcd9bbd82540010390c41
+Hồng Bàng - Phù Đổng Thiên Vương separator 10.7546955197447 106.662520766258 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b3c274bfd3d90017e9ab93&t=1714385442018
+Ba Tháng Hai - Lý Thường Kiệt 3 separator 10.7644610285251 106.659817099571 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63ae7b3cbfd3d90017e8f34d
+Lý Thường Kiệt - Lạc Long Quân separator 10.7904463853615 106.652473211288 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cdc57766c88001718896e
+Tôn Đức Thắng - Công trường Mê Linh separator 10.775301268578 106.70676112175 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=649da77ea6068200171a6dd4
+Nút giao Bốn Xã 2 (Hòa Bình) separator 10.7736939654481 106.62178337574 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a824c905058170011f6eab0
+Nguyễn Thị Minh Khai - Pasteur separator 10.780518 106.695957 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad16
+Lý Thường Kiệt - Tô Hiến Thành 2 separator 10.7708113380158 106.658003926277 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63ae7c73bfd3d90017e8f3ed
+Lạc Long Quân - Âu Cơ separator 10.7747690150491 106.647881269455 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cdc9d766c880017188970
+Lý Thường Kiệt - Tô Hiến Thành 1 separator 10.7704951431996 106.658336520195 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63ae7c53bfd3d90017e8f3d8
+Pasteur - Hàm Nghi separator 10.770674 106.702639 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad1e
+Đường hầm (Đầu hầm Tp Thủ Đức) separator 10.7706637804763 106.714040637016 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5b87c386ca057700116404a6
+Võ Văn Ngân - Đặng Văn Bi separator 10.8511456568495 106.757980585098 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cd542766c880017188948
+Lý Tự Trọng - Hai Bà Trưng 2 separator 10.779137682017 106.702335476875 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5ad0621c98d8fc001102e268
+Nguyễn Thị Minh Khai - Đinh Tiên Hoàng 1 separator 10.7866101161314 106.701568365097 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=6318283cc9eae60017a19f0c
+Cầu Sài Gòn 9 (Bình Thạnh - Thủ Đức) separator 10.7985614089434 106.726319789886 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58abbf72bd82540010390ba4
+Cầu Sài Gòn 5 (dạ cầu Thủ Đức) separator 10.7991621227557 106.729398965836 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58abbee5bd82540010390ba2
+Lý Chính Thắng - Trương Định separator 10.7825155824841 106.683688759804 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515acfe
+Yên Thế - Bạch Đằng separator 10.8141637700114 106.668593287468 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58df4e22dc195800111e04bb
+Đỗ Xuân Hợp - Tây Hòa separator 10.8244331690453 106.769192218781 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b549b8bfd3d90017ea782c
+Mai Chí Thọ - Võ Nguyên Giáp (Cát Lái cầu A) separator 10.8049847689326 106.752707362175 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56de42f611f398ec0c48127d
+Nơ Trang Long - Nguyễn Huy Lượng (Bệnh viện Ung Bướu) separator 10.8053483512381 106.695023775101 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b66035bfd3d90017eaa48e
+Võ Chí Công - Liên Phường 2 separator 10.8049478837466 106.791937351227 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b54aedbfd3d90017ea79c3
+Nguyễn Kiệm - Hồ Văn Huê separator 10.8062968247449 106.6783618927 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=586e20a0f9fab7001111b0a7
+BX Miền Đông - Quốc Lộ 13 (2) separator 10.8172620146729 106.713198423386 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a8256df5058170011f6eacb
+Cầu vượt Sóng Thần 2 separator 10.8743050851613 106.748507022858 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58746488b807da0011e33cd7
+Lê Văn Việt - Man Thiện separator 10.8452343413582 106.786707043648 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5ad0679598d8fc001102e274
+Võ Văn Kiệt - Nguyễn Văn Cừ 2 separator 10.7536415 106.6864407 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56de42f611f398ec0c48128c
+Võ Văn Kiệt - Cầu Chà Và 2 (trên cầu) separator 10.7489404145267 106.660348176956 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5b5995a3fd4edb0019c7d9ab
+Nút giao Phú Nhuận 1 (Phan Đình Phùng) separator 10.7990461956223 106.680378913879 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58ad6961bd82540010390be5
+Lý Tự Trọng - Hai Bà Trưng 1 separator 10.7791113331904 106.702115535736 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a823d555058170011f6eaa2
+Hoàng Văn Thụ - Trần Quốc Hoàn separator 10.8013067666529 106.662268638611 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=587c8183b807da0011e33d3f
+Nguyễn Thị Định - Thân Văn Nhiếp separator 10.7903304548658 106.754236221313 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b65e6abfd3d90017eaa361
+Trường Sơn - Phan Đình Giót separator 10.8048741133609 106.664215922356 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56f11afc3ac17b11001c504e
+Mai Chí Thọ - Võ Nguyên Giáp (Cát Lái cầu B) separator 10.8062546704304 106.754064559937 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56de42f611f398ec0c48127e
+Phạm Văn Đồng - Phan Văn Trị 2 separator 10.8207659432755 106.69480919838 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58d7c20ac1e33c00112b321c
+Trường Chinh - Tây Thạnh 1 separator 10.8199228965258 106.630790233612 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5874796db807da0011e33cf7
+Nút giao Hàng Xanh 1 (Viện Máy tính) separator 10.8016545453012 106.71106338501 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d9ddd49766c880017188c94
+Phạm Văn Đồng - Nguyễn Xí (hướng đi Sân bay) separator 10.8230474266509 106.702968478203 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cd767766c880017188950
+Quốc lộ 1 - Nguyễn Thị Tú separator 10.8161291568165 106.600910425186 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=584e738361cfea0012cf6951
+Đinh Bộ Lĩnh - Bạch Đằng 1 separator 10.8030720025958 106.710022687912 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a8253615058170011f6eabf
+Đinh Bộ Lĩnh - Bạch Đằng 2 separator 10.8030930799773 106.709395051003 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a8253bc5058170011f6eac1
+Nguyễn Văn Cừ - Trần Hưng Đạo 3 separator 10.7568773715932 106.684874296188 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5b632950fd4edb0019c7dc07
+Vĩnh Lộc - Nguyễn Thị Tú 1 separator 10.8135788937036 106.579173803329 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a82602c5058170011f6ead9
+Đinh Bộ Lĩnh - Bạch Đằng 3 separator 10.8028664980496 106.709464788437 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a606a958576340017d06621
+Mai Chí Thọ - Nguyễn Cơ Thạch 1 separator 10.7732144077704 106.722586154938 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5822b5ededeb6c0012a2d66a
+Nút giao Ngã sáu Phù Đổng separator 10.771135 106.693342 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad0c
+Mai Chí Thọ - Tố Hữu (C6) separator 10.7713172490313 106.716717481613 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a10c79f02eb490011a0b0dd
+Nguyễn Thị Minh Khai - Mạc Đĩnh Chi separator 10.784426 106.699659 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad19
+Võ Thị Sáu - Hai Bà Trưng separator 10.7878590168447 106.691815853119 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad01
+Nam Kỳ Khởi Nghĩa - Lý Chính Thắng separator 10.7886020312638 106.6847884655 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58e49e3dd9d6200011e0b9d1
+Nút giao Bốn Xã 3 (Lê Văn Quới) separator 10.773841521503 106.621397137642 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a824b6c5058170011f6eaab
+Mai Chí Thọ - Đồng Văn Cống 1 separator 10.7878800952932 106.749606728554 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58175ac4edeb6c0012a2d5bb
+Nút giao Bốn Xã 1 (Bình Long) separator 10.7738836803625 106.621649265289 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a824c3e5058170011f6eaae
+Nút giao Công Trường Dân Chủ separator 10.777664 106.681336 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515acf9
+Nguyễn Hữu Cảnh - Ngô Tất Tố (Cầu Thủ Thiêm 1) separator 10.7892027649838 106.715097427368 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=587470c2b807da0011e33ce4
+Lê Lợi - Pasteur separator 10.774816 106.700909 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad0d
+Đinh Tiên Hoàng - Nguyễn Đình Chiểu separator 106.69955 566 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad06&t=1714386062697
+Quốc lộ 1 - Cao tốc Trung Lương separator 10.689411864849 106.592531204224 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58afdbaebd82540010390c48
+Kha Vạn Cân - Đường Số 2 separator 10.8418834903115 106.746854782104 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b3c9bfbfd3d90017e9b039
+Nguyễn Văn Linh - Nguyễn Hữu Thọ (1) separator 10.7291234621994 106.700549125671 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a8259035058170011f6eacf
+Mai Chí Thọ - Lương Định Của 1 separator 10.791531914198 106.751103401184 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56de42f611f398ec0c48127f
+Trường Chinh - Đồng Đen separator 10.7970385413523 106.645912528038 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cdac3766c880017188962
+Hoàng Văn Thụ - Cộng Hòa separator 10.8006744408059 106.660782694817 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cdbdc766c88001718896a
+Cầu Sài Gòn 4 (Thủ Đức 1) separator 10.7997417577515 106.730428934097 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=589d0b74b3bf7600110283d4
+Trường Chinh - Âu Cơ separator 10.8019180137061 106.63648724556 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56df807bc062921100c143da
+Xô Viết Nghệ Tĩnh - Nguyễn Văn Lạc separator 10.7953154258079 106.709818840027 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63b65fa9bfd3d90017eaa449
+Nguyễn Văn Linh - Quốc lộ 50 (1) separator 10.7199365991593 106.655665040016 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5a82628e5058170011f6eadb
+Nam Kỳ Khởi Nghĩa - Võ Thị Sáu separator 10.784533873088 106.688543558121 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58af8a0bbd82540010390c25
+Tôn Đức Thắng - Lê Duẩn separator 10.7852927046947 106.703263521194 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58af9a07bd82540010390c3b
+Nguyễn Đình Chiểu - Trương Định separator 10.777922 106.689658 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad11
+Nút giao Cây Gõ 2 (Minh Phụng) separator 10.7550275416962 106.643267869949 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5d8cd372766c880017188940
+Nam Kỳ Khởi Nghĩa - Nguyễn Đình Chiểu separator 10.7814721788992 106.692835092545 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad03
+Đồng Văn Cống - Phan Văn Đáng separator 10.7785053 106.7572618 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56de42f611f398ec0c48129e
+Võ Thị Sáu - Bà Huyện Thanh Quan separator 10.7801863634439 106.684262752533 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515acfb
+Lý Tự Trọng - Đồng Khởi separator 10.7778940148849 106.701037287712 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad14&t=1714386379639
+Võ Thị Sáu - Pasteur separator 10.7860304558102 106.690008044243 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad04&t=1714386386724
+Nam Kỳ Khởi Nghĩa -Nguyễn Thị Minh Khai 2 separator 10.7794696770349 106.695173978806 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58b5752e17139d0010f35d5f&t=1714386393457
+Hai Bà Trưng - Lê Duẩn separator 10.781431 106.699614 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=5deb576d1dc17d7c5515ad18&t=1714386399928
+Cách Mạng Tháng Tám – Hòa Hưng separator 10.7802232516687 106.677144169807 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=631955e7c9eae60017a1c30a&t=1714386431820
+Tô Hiến Thành – Sư Vạn Hạnh separator 10.7778940148849 106.665540933609 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63ae7a74bfd3d90017e8f2c7&t=1714386439947
+Nút giao Bảy Hiền 2 (Hoàng Văn Thụ) separator 10.7931970867358 106.653615832329 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58747923b807da0011e33cf5&t=1714386445791
+Lý Thái Tổ - Nguyễn Đình Chiểu separator 10.7662581006404 106.678780317307 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63ae763bbfd3d90017e8f0c4&t=1714386492634
+Đường hầm - Ký Con separator 10.7646665593097 106.699186563492 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=56f8e708025e9511002786cb&t=1714386504177
+Nam Kỳ Khởi Nghĩa - Điện Biên Phủ 2 separator 10.7833376554873 106.690700054169 separator http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=58af8d68bd82540010390c2e&t=1714386511703
