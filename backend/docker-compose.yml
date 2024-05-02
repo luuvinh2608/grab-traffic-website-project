@@ -1,0 +1,11 @@
+# docker-compose.yaml
+version: '3'
+
+services:
+  web:
+    build: '.'
+    ports:
+      - '5000:5000'
+    environment:
+      - FLASK_APP=app
+      - LISTEN_PORT=5000

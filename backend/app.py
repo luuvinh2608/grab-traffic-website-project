@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_restful import Api, Resource
+import os
 # from trafficData import getData, urls
 
 app = Flask(__name__)
@@ -94,4 +95,4 @@ api.add_resource(locationInfo, "/id/<int:id>")
 api.add_resource(searchByName, "/name/<string:name>")
 
 if __name__ == "__main__":
-  app.run(debug=True)
+  app.run(debug=True, host="0.0.0.0", port=os.environ.get('LISTEN_PORT'))
