@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_restful import Api, Resource
-from trafficData import getData, urls
+# from trafficData import getData, urls
 
 app = Flask(__name__)
 api = Api(app)
@@ -34,8 +34,8 @@ class index(Resource):
   
 class locationInfo(Resource):
   def get(self, id):
-    path = urls.paths[id]
-    data = getData.getData(path)
+    # path = urls.paths[id]
+    # data = getData.getData(path)
     return {
       "id": 1,
       "name": "Ba Tháng Hai - Sư Vạn Hạnh",
