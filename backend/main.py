@@ -5,7 +5,6 @@ from trafficData import getData, urls
 app = Flask(__name__)
 api = Api(app)
 
-
 class index(Resource):
   def get(self):
     return {
