@@ -1,4 +1,4 @@
-name: data-air-traffic
+name: data-air
 
 on:
   schedule:
