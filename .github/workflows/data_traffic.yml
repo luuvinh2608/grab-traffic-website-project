@@ -1,0 +1,21 @@
+name: data-air-traffic
+
+on:
+  schedule:
+    - cron: '*/1 * * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Run get traffic data code
+        env:
+          MONGO_USER_NAME: ${{ secrets.MONGO_USER_NAME }}
+          MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
+        run: python backend/trafficData/getTrafficData.py
+
