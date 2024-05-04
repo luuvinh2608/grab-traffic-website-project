@@ -7,15 +7,24 @@ on:
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
-      - name: Run get traffic data code
-        env:
+    - uses: actions/checkout@v4
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v2
+      with:
+        python-version: "3.12"
+        cache: "pip"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r backend/trafficData/requirements.txt
+    - name: Run the code
+      env:
           MONGO_USER_NAME: ${{ secrets.MONGO_USER_NAME }}
-          MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
+          MONGO_PASSWORD: ${{secrets.MONGO_PASSWORD}}
         run: python backend/trafficData/getTrafficData.py
 
+        
