@@ -17,8 +17,15 @@ const PageSlice = createSlice({
     toggleSideBar(state) {
       return { ...state, showSideBar: !state.showSideBar };
     },
-    setShowDetails(state, action: PayloadAction<{ showDetails: boolean, district: string | null }>) {
-      return { ...state, showDetails: action.payload.showDetails, district: action.payload.district };
+    setShowDetails(
+      state,
+      action: PayloadAction<{ showDetails: boolean; district: string | null }>,
+    ) {
+      return {
+        ...state,
+        showDetails: action.payload.showDetails,
+        district: action.payload.district,
+      };
     },
   },
 });

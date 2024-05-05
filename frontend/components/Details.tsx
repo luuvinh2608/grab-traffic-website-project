@@ -13,7 +13,7 @@ export const Details = () => {
   return (
     <div className={`${className}${appendClass}`}>
       <div className="flex flex-col">
-        <div className="flex justify-between mb-6">
+        <div className="mb-6 flex justify-between">
           {/* dummy div to center the text */}
           <div></div>
           <div className="flex flex-col items-center justify-center">
@@ -30,14 +30,16 @@ export const Details = () => {
           </button>
         </div>
         <h3 className="text-lg font-bold uppercase">Air Quality</h3>
-        <div className="flex flex-col p-4 bg-green-500 rounded-md text-white">
-          <div className="flex justify-center items-end align-bottom">
-            <h4 className="text-7xl font-semibold">50<span className="text-xl font-light">AQI</span></h4>
+        <div className="flex flex-col rounded-md bg-green-500 p-4 text-white">
+          <div className="flex items-end justify-center align-bottom">
+            <h4 className="text-7xl font-semibold">
+              50<span className="text-xl font-light">AQI</span>
+            </h4>
           </div>
-          <div className='flex flex-row items-center justify-around bg-white rounded-md p-2 ml-4 text-green-700'>
-              <p className="text-base font-semibold">PM2.5</p>
-              <p className="text-base">11.9µg/m³</p>
-            </div>
+          <div className="ml-4 flex flex-row items-center justify-around rounded-md bg-white p-2 text-green-700">
+            <p className="text-base font-semibold">PM2.5</p>
+            <p className="text-base">11.9µg/m³</p>
+          </div>
         </div>
       </div>
     </div>
