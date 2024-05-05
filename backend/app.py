@@ -1,49 +1,83 @@
-from flask import Flask
+import os, requests, json
+from flask import Flask, request
 from flask_restful import Api, Resource
-import os
-# from trafficData import getData, urls
+from flask_pymongo import PyMongo
+from datetime import datetime
+from database import *
+# from trafficData import getData
 
+# set up app
 app = Flask(__name__)
 api = Api(app)
 
 
-class index(Resource):
+class location_all(Resource):
   def get(self):
+    locations = []
+    for document in Place_LatLong_API.find():
+      document.pop("_id")
+      try:
+        document.pop("air_data")
+      except:
+        pass
+      try:
+        document.pop("traffic_data")
+      except:
+        pass
+      locations.append(document)
     return {
-      "count": 2,
-      "time": "2024-04-26 20:31:55.001356",
-      "locations": [
-        {
-          "id": 1,
-          "name": "Ba Tháng Hai – Sư Vạn Hạnh",
-          "lat": 10.7697784337206 ,
-          "lng": 106.670830249786,
-          "traffic-quality": 5,
-          "aqi": 63
-        },
-        {
-          "id": 2,
-          "name": "Lê Văn Sỹ - Huỳnh Văn Bánh",
-          "lat": 10.7918902432446 ,
-          "lng": 106.671452522278,
-          "traffic-quality": 2,
-          "aqi": 100
-        }
-      ]
+      "count": len(locations),
+      "time": str(datetime.now()),
+      "locations": locations
     }
 
-  
-class locationInfo(Resource):
-  def get(self, id):
-    # path = urls.paths[id]
-    # data = getData.getData(path)
+
+class location_name_search(Resource):
+  def post(self):
+    name = request.form.get("keyword")
+    locations = []
+    for document in Place_LatLong_API.find():
+      if (name.lower() in document["place"].lower()):
+        document.pop("_id")
+        try:
+          document.pop("air_data")
+        except:
+          pass
+        try:
+          document.pop("traffic_data")
+        except:
+          pass
+        locations.append(document)
     return {
-      "id": 1,
-      "name": "Ba Tháng Hai - Sư Vạn Hạnh",
-      "lat": 10.7697784337206,
-      "lng": 106.670830249786,
-      "time": "2024-04-26 20:31:55.001356",
-      "image_url": "http://giaothong.hochiminhcity.gov.vn/render/ImageHandler.ashx?id=63ae7a50bfd3d90017e8f2b2",
+      "count": len(locations),
+      "keyword": name,
+      "locations": locations
+    }
+
+
+class location_name_autofill(Resource):
+  def post(self):
+    name = request.form.get("keyword")
+    print(name)
+    locations = []
+    for document in Place_LatLong_API.find():
+      if (name.lower() in document["place"].lower()):
+        locations.append({
+          "id": document["id"],
+          "place": document["place"]
+        })
+        print(document["place"])
+    return {
+      "count": len(locations),
+      "keyword": name,
+      "locations": locations
+    }
+  
+
+class data_current(Resource):
+  def get(self, id):
+    location = Place_LatLong_API.find_one({"id": id})
+    sample_traffic = {
       "traffic_data": {
         "traffic_quality": 5,
         "car": 6,
@@ -52,47 +86,35 @@ class locationInfo(Resource):
         "bus": 0,
         "person": 5,
         "motorbike": 3
-      },
-      "air_data": {
-        "aqi": 63,
-        "co": 10,
-        "no": 15,
-        "no2": 14,
-        "o3": 11,
-        "so2": 19,
-        "nh3": 23,
-        "pm10": 114,
-        "pm2_5": 31
       }
     }
-
-
-class searchByName(Resource):
-  def get(self, name):
+    try:
+      traffic_data = location["traffic_data"][-1]
+      traffic_data.pop("time")
+      traffic_data["traffic_quality"] = 5
+    except:
+      traffic_data = sample_traffic["traffic_data"]
+    air_data = requests.get("http://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={API}".format(lat = location["lat"], lon = location["long"], API = "a52a17bde8ce5aecda9cf37ef79748ce"))
+    air_data = json.loads(air_data.content.decode("utf-8"))["list"][0]
+    aqi = air_data["main"]["aqi"]
+    air_data = air_data["components"]
+    air_data["aqi"] = aqi
     return {
-      "count": 3,
-      "keyword": "Đinh Tiên Hoàng",
-      "locations": [
-        {
-          "id": 6,
-          "name": "Đinh Tiên Hoàng - Võ Thị Sáu 2",
-          "lat": 10.7919218604929,
-          "long": 106.695785522461
-        }, 
-        {
-          "id": 7,
-          "name": "Đinh Tiên Hoàng - Nguyễn Đình Chiểu",
-          "lat": 10.788566,
-          "long": 106.699558
-        }
-      ]
+      "id": location["id"],
+      "name": location["place"],
+      "lat": location["lat"],
+      "long": location["long"],
+      "time": str(datetime.now()),
+      "request": location["request"],
+      "traffic_data": traffic_data,
+      "air_data": air_data
     }
 
 
-
-api.add_resource(index, "/")
-api.add_resource(locationInfo, "/id/<int:id>")
-api.add_resource(searchByName, "/name/<string:name>")
+api.add_resource(location_all, "/location/all")
+api.add_resource(location_name_search, "/location/name/search")
+api.add_resource(location_name_autofill, "/location/name/autofill")
+api.add_resource(data_current, "/data/current/locationID=<int:id>")
 
 if __name__ == "__main__":
   app.run(debug=True, host="0.0.0.0", port=os.environ.get('LISTEN_PORT'))

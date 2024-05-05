@@ -14,10 +14,20 @@ CLIENT = MongoClient(uri, server_api=ServerApi('1'))
 # CLIENT['grab-engineering-project']['Place_LatLong_API'].find_one_and_update({'id': 1},{"$unset": {'traffic_data': 1}})
 
 #CLIENT['grab-engineering-project']['Place_LatLong_API'].find_one_and_update({'id': 1},{"$unset": {'traffic_data': 1}})
-for i in range(2, 127):
-    CLIENT['grab-engineering-project']['Place_LatLong_API'].find_one_and_update(
-        {'id': i}, {"$unset": {'air_data': 1}})
 
 
 
+uri = "mongodb+srv://backend:5BmleaOy4vkY9zIb@cluster0.teog563.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
+client = MongoClient(uri, server_api=ServerApi('1'))
+
+# Send a ping to confirm a successful connection
+try:
+  client.admin.command('ping')
+  print("Pinged your deployment. You successfully connected to MongoDB!")
+except Exception as e:
+  print(e)
+
+database = client["grab-engineering-project"]
+Place_LatLong_API = database["Place_LatLong_API"]
 
