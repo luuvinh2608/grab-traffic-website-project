@@ -3,6 +3,7 @@ import { useAppDispatch, useAppSelector } from '@/libs/redux';
 import { setShowDetails } from '@/libs/redux/slicePages';
 import React, { useState, useRef } from 'react';
 import { FaTimes, FaChevronRight } from 'react-icons/fa';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 export const Details = () => {
   const dispatch = useAppDispatch();
@@ -41,6 +42,14 @@ export const Details = () => {
             <p className="text-base">11.9µg/m³</p>
           </div>
         </div>
+        <Tabs defaultValue="airq" className="">
+          <TabsList className="grid w-full grid-cols-2">
+            <TabsTrigger value="airq">Air Quality</TabsTrigger>
+            <TabsTrigger value="traffic">Traffic</TabsTrigger>
+          </TabsList>
+          <TabsContent value="airq">AIRQ CHART</TabsContent>
+          <TabsContent value="traffic">TRAFFIC CHART</TabsContent>
+        </Tabs>
       </div>
     </div>
   );
