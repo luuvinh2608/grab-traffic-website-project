@@ -12,8 +12,9 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
+    "@urbica/react-map-gl-cluster": "^0.2.0",
     "dotenv": "^16.4.5",
-    "mapbox-gl": "^3.3.0",
+    "mapbox-gl": "^2.15.0",
     "next": "14.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",

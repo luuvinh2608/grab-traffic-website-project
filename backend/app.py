@@ -4,6 +4,7 @@ from flask_restful import Api, Resource
 from flask_pymongo import PyMongo
 from datetime import datetime
 from database import *
+import math
 # from trafficData import getData
 
 # set up app
@@ -74,31 +75,63 @@ class location_name_autofill(Resource):
     }
   
 
+class location_nearby(Resource):
+  def post(self):
+    id = int(request.form.get("id"))
+    center = Place_LatLong_API.find_one({"id":id})
+    try:
+      radius = float(request.form.get("radius"))
+    except:
+      radius = 3
+    try:
+      number = int(request.form.get("number"))
+    except:
+      number = 3
+    locations = []
+    for document in Place_LatLong_API.find():
+      distance = math.sqrt((float(document["lat"])-float(center["lat"]))**2 + (float(document["long"])-float(center["long"]))**2) * 111
+      if ( distance < radius ) and (int(document["id"]) != id):
+        locations.append({
+          "id": document["id"],
+          "place": document["place"],
+          "distance": distance
+        })
+    locations = sorted(locations, key=lambda d: d['distance'])[0:number]
+    return {
+      "count": len(locations),
+      "param": {
+        "radius": radius,
+        "number": number
+      },
+      "center": {
+        "id": id,
+        "place": center["place"]
+      },
+      "locations": locations
+    }
+
+
 class data_current(Resource):
   def get(self, id):
     location = Place_LatLong_API.find_one({"id": id})
-    sample_traffic = {
-      "traffic_data": {
-        "traffic_quality": 5,
-        "car": 6,
-        "bike": 7,
-        "truck": 1,
-        "bus": 0,
-        "person": 5,
-        "motorbike": 3
-      }
-    }
-    try:
-      traffic_data = location["traffic_data"][-1]
-      traffic_data.pop("time")
+    traffic_data = location["traffic_data"][-1]
+    traffic_data.pop("time")
+    traffic_index = (traffic_data["person"] + (traffic_data["bike"] + traffic_data["motorbike"])*2 + 
+                     traffic_data["car"]*5 + (traffic_data["truck"] + traffic_data["bus"])*15)
+    if (traffic_index < 10):
+      traffic_data["traffic_quality"] = 1
+    elif (traffic_index < 20):
+      traffic_data["traffic_quality"] = 2
+    elif (traffic_index < 35):
+      traffic_data["traffic_quality"] = 3
+    elif (traffic_index < 50):
+      traffic_data["traffic_quality"] = 4
+    else:
       traffic_data["traffic_quality"] = 5
-    except:
-      traffic_data = sample_traffic["traffic_data"]
-    air_data = requests.get("http://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={API}".format(lat = location["lat"], lon = location["long"], API = "a52a17bde8ce5aecda9cf37ef79748ce"))
-    air_data = json.loads(air_data.content.decode("utf-8"))["list"][0]
-    aqi = air_data["main"]["aqi"]
+    air_data = location["air_data"][-1]
+    air_quality = air_data["aqp"]
     air_data = air_data["components"]
-    air_data["aqi"] = aqi
+    air_data["air_quality"] = air_quality
     return {
       "id": location["id"],
       "name": location["place"],
@@ -114,6 +147,7 @@ class data_current(Resource):
 api.add_resource(location_all, "/location/all")
 api.add_resource(location_name_search, "/location/name/search")
 api.add_resource(location_name_autofill, "/location/name/autofill")
+api.add_resource(location_nearby, "/location/nearby")
 api.add_resource(data_current, "/data/current/locationID=<int:id>")
 
 if __name__ == "__main__":
