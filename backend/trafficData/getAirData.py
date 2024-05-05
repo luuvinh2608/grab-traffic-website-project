@@ -3,6 +3,7 @@ from detect import *
 import datetime
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
+import pytz
 
 AIR_API_KEY = os.environ.get('AIR_API_KEY')
 
@@ -19,9 +20,16 @@ def getAirData(path, db, collection):
 
         aqi = data["list"][0]["main"]["aqi"]
         components = data["list"][0]["components"]
-        time = datetime.datetime.fromtimestamp(data["list"][0]["dt"])
-        time = str(time)
-        insert_data = {"aqp": aqi, "components": components, "time": time}
+        
+        time = datetime.datetime.fromtimestamp(data["list"][0]["dt"], datetime.UTC)
+
+        hcm_tz = pytz.timezone('Asia/Ho_Chi_Minh')
+
+        # Convert the UTC time to Saigon time
+        hcm_time = time.astimezone(hcm_tz)
+
+        hcm_time = str(hcm_time)
+        insert_data = {"aqp": aqi, "components": components, "time": hcm_time}
 
         db[collection].find_one_and_update(
             {"id": path[0]}, {"$push": {'air_data': insert_data}})
