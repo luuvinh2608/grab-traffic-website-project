@@ -6,7 +6,8 @@ from datetime import datetime
 # from urls import *
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
-import datetime
+from pytz import timezone
+
 
 def getTrafficData(path, db, collection):
 
@@ -15,8 +16,12 @@ def getTrafficData(path, db, collection):
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"}
 
     # Save image
-    k = './data/images/' + f'{path[0]}.jpg'
-    timepoint = str(datetime.now())
+    k = 'backend/trafficData/data/images/' + f'{path[0]}.jpg'
+
+    saigon = timezone('Asia/Saigon')
+    timepoint = datetime.now(saigon)
+    timepoint = str(timepoint)
+
     try:
         # print(requests.get(url, headers=headers).content)
         if (requests.get(url, headers=headers).headers['Content-Type']):
@@ -43,7 +48,6 @@ def getTrafficData(path, db, collection):
                         bike = int(temp)
                 temp = part
                 count += 1
-
             data = {
                 "time": timepoint,
                 "car": car,
@@ -54,7 +58,7 @@ def getTrafficData(path, db, collection):
                 "motorbike": motorbike
             }
             db[collection].find_one_and_update(
-                    {"id": path[0]}, {"$push": {'traffic_data': data}})
+                {"id": path[0]}, {"$push": {'traffic_data': data}})
 
     except Exception as e:
         print("Exception in traffic data update ", e)
@@ -69,11 +73,11 @@ if __name__ == '__main__':
     paths = []
     database = None
     collection = None
-    
+
     uri = f"mongodb+srv://{MONGO_USER_NAME}:{MONGO_PASSWORD}@cluster0.teog563.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
     CLIENT = MongoClient(uri, server_api=ServerApi('1'))
     dbs = CLIENT.list_database_names()
-    
+
     for db in dbs:
         if db == 'grab-engineering-project':
             database = CLIENT[db]
@@ -83,7 +87,8 @@ if __name__ == '__main__':
                     collection = collect
 
     for document in database[collection].find():
-        paths.append([document['id'], document['place'], document['request'], document['lat'], document['long']])
-    
+        paths.append([document['id'], document['place'],
+                     document['request'], document['lat'], document['long']])
+
     for path in paths:
         getTrafficData(path, database, collection)
