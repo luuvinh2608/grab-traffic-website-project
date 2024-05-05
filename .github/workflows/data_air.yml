@@ -1,9 +1,12 @@
-name: data-air
+name: Python application
 
 on:
   schedule:
     - cron: '*/5 * * * *'
   workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   build:
@@ -13,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python 3.12
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: "3.12"
         cache: "pip"
@@ -21,11 +24,10 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r backend/trafficData/requirements.txt
-    - name: Run the code
+    - name: Run the code for air data
       env:
           AIR_API_KEY: ${{ secrets.AIR_API_KEY }}
           MONGO_USER_NAME: ${{ secrets.MONGO_USER_NAME }}
           MONGO_PASSWORD: ${{secrets.MONGO_PASSWORD}}
       run: |
         python backend/trafficData/getAirData.py
-

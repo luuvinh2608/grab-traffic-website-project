@@ -1,9 +1,8 @@
 import requests
 from detect import *
-from datetime import datetime
+import datetime
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
-import datetime
 
 AIR_API_KEY = os.environ.get('AIR_API_KEY')
 
@@ -21,6 +20,7 @@ def getAirData(path, db, collection):
         aqi = data["list"][0]["main"]["aqi"]
         components = data["list"][0]["components"]
         time = datetime.datetime.fromtimestamp(data["list"][0]["dt"])
+        time = str(time)
         insert_data = {"aqp": aqi, "components": components, "time": time}
 
         db[collection].find_one_and_update(
@@ -34,8 +34,8 @@ if __name__ == '__main__':
 
     MONGO_USER_NAME = os.environ.get('MONGO_USER_NAME')
     MONGO_PASSWORD = os.environ.get('MONGO_PASSWORD')
-    # Create a new client and connect to the server
 
+    # Create a new client and connect to the server
     paths = []
     database = None
     collection = None

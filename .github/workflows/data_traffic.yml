@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python 3.12
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: "3.12"
         cache: "pip"
@@ -21,10 +21,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r backend/trafficData/requirements.txt
-    - name: Run the code
+    - name: Run the code for traffic data
       env:
           MONGO_USER_NAME: ${{ secrets.MONGO_USER_NAME }}
-          MONGO_PASSWORD: ${{secrets.MONGO_PASSWORD}}
-        run: python backend/trafficData/getTrafficData.py
-
-        
+          MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
+      run: | 
+        python backend/trafficData/getTrafficData.py
