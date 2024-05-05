@@ -1,4 +1,4 @@
-name: Python application
+name: data-air
 
 on:
   schedule:
