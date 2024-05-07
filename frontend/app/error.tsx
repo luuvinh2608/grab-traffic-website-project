@@ -14,11 +14,13 @@ export default function CustomError({ error, reset }: Readonly<ErrorProps>) {
   }, [error]);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
-      <h1 className="text-4xl font-bold mb-4">Something went wrong</h1>
-      <p className="text-lg mb-8">An error occurred while rendering the page.</p>
+    <div className="flex min-h-screen flex-col items-center justify-center">
+      <h1 className="mb-4 text-4xl font-bold">Something went wrong</h1>
+      <p className="mb-8 text-lg">
+        An error occurred while rendering the page.
+      </p>
       <button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
         onClick={() => reset()}
       >
         Try again

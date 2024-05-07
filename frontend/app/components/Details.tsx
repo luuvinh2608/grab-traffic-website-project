@@ -26,8 +26,8 @@ const tabsItems = [
     label: 'Air Quality',
     children: (
       <CustomTabPane key="airq">
-          <AirQuality />
-          <Weather />
+        <AirQuality />
+        <Weather />
       </CustomTabPane>
     ),
   },
@@ -62,7 +62,7 @@ const CustomTabBar: TabsProps['renderTabBar'] = (props, DefaultTabBar) => {
       <DefaultTabBar
         {...props}
         style={{ background: colorBgContainer }}
-        className="inline-flex items-center justify-between whitespace-nowrap rounded-sm px-3 py-1.5 text-md ring-offset-background transition-all ease-in-out duration-300 ring-offset-2 ring-offset-opacity-50 ring-offset-solid ring-offset-opacity-50 ring-offset-solid uppercase font-bold"
+        className="text-md ring-offset-opacity-50 ring-offset-solid ring-offset-opacity-50 ring-offset-solid inline-flex items-center justify-between whitespace-nowrap rounded-sm px-3 py-1.5 font-bold uppercase ring-offset-2 ring-offset-background transition-all duration-300 ease-in-out"
       />
     </StickyBox>
   );

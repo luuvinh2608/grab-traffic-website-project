@@ -10,28 +10,24 @@ import './SideBar.css';
 const menuItems = [
   {
     key: 'home',
-    label: (
-      <Link href="/">
-        Home
-      </Link>
-    ),
+    label: <Link href="/">Home</Link>,
     icon: <FaHome />,
   },
   {
     key: 'chart',
-    label: (
-      <Link href="/chart">
-        Charts
-      </Link>
-    ),
-    icon: <FaChartBar />
+    label: <Link href="/chart">Charts</Link>,
+    icon: <FaChartBar />,
   },
 ];
 
 const CustomMenu = ({ mode }: { mode: 'horizontal' | 'inline' }) => {
   const pathname = usePathname();
   return (
-    <Menu mode={mode} selectedKeys={[pathname == '/' ? 'home' : pathname.replace('/', '')]} items={menuItems}/>
+    <Menu
+      mode={mode}
+      selectedKeys={[pathname == '/' ? 'home' : pathname.replace('/', '')]}
+      items={menuItems}
+    />
   );
 };
 
