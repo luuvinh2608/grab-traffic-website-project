@@ -1,16 +1,27 @@
 'use client';
-import React, { useState, useRef } from 'react';
-import { Map, MapRef, Source, Layer, MapLayerMouseEvent } from 'react-map-gl';
-import districts from '@/data/districts.json';
+import React, { useState, useRef, Suspense } from 'react';
+import {
+  Map,
+  MapRef,
+  Source,
+  Layer,
+  MapLayerMouseEvent,
+  ScaleControl,
+  GeolocateControl,
+  NavigationControl,
+} from 'react-map-gl';
+import districts from '../data/districts.json';
 import { FeatureCollection, Point } from 'geojson';
-import { useAppDispatch } from '@/libs/redux';
-import { setShowDetails } from '@/libs/redux/slicePages';
+import { useAppDispatch, setShowDetails } from '@/lib/redux';
+import 'mapbox-gl/dist/mapbox-gl.css';
+import Loading from './loading';
 
 export default function Home() {
   const mapboxToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
   const [selectedDistrict, setSelectedDistrict] = useState<string | null>(null);
   const mapRef = useRef<MapRef>(null);
   const dispatch = useAppDispatch();
+  const [isLoading, setIsLoading] = useState(true);
 
   const geojson: FeatureCollection<Point> = {
     type: 'FeatureCollection',
@@ -107,31 +118,43 @@ export default function Home() {
   };
 
   return (
-    <Map
-      ref={mapRef}
-      mapboxAccessToken={mapboxToken}
-      mapStyle="mapbox://styles/mapbox/streets-v11"
-      initialViewState={{
-        latitude: 10.770496918,
-        longitude: 106.692330564,
-        zoom: 12,
-      }}
-      maxZoom={22}
-      interactiveLayerIds={['unclustered-point']}
-      onClick={handleMapClick}
-    >
-      <Source
-        id="districts"
-        type="geojson"
-        data={geojson}
-        cluster={true}
-        clusterMaxZoom={14}
-        clusterRadius={50}
+    <>
+      {isLoading && <Loading />}
+      <Map
+        ref={mapRef}
+        mapboxAccessToken={mapboxToken}
+        reuseMaps
+        mapStyle="mapbox://styles/mapbox/traffic-day-v2"
+        initialViewState={{
+          latitude: 10.770496918,
+          longitude: 106.692330564,
+          zoom: 12,
+        }}
+        maxZoom={22}
+        interactiveLayerIds={['unclustered-point']}
+        onClick={handleMapClick}
+        onLoad={() => setIsLoading(false)}
       >
-        <Layer {...(clusterLayer as any)} />
-        <Layer {...(clusterCountLayer as any)} />
-        <Layer {...(unclusteredPointLayer as any)} />
-      </Source>
-    </Map>
+        <ScaleControl maxWidth={100} unit="metric" />
+        <NavigationControl showCompass showZoom position="bottom-right" />
+        <GeolocateControl
+          positionOptions={{ enableHighAccuracy: true }}
+          trackUserLocation
+          position="bottom-right"
+        />
+        <Source
+          id="districts"
+          type="geojson"
+          data={geojson}
+          cluster={true}
+          clusterMaxZoom={14}
+          clusterRadius={50}
+        >
+          <Layer {...(clusterLayer as any)} />
+          <Layer {...(clusterCountLayer as any)} />
+          <Layer {...(unclusteredPointLayer as any)} />
+        </Source>
+      </Map>
+    </>
   );
 }
