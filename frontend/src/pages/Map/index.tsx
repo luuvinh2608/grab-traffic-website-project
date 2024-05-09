@@ -15,6 +15,7 @@ import {
 import districts from 'data/districts.json'
 import { FeatureCollection, Point } from 'geojson'
 import { useAppDispatch, setShowDetails } from 'libs/redux'
+import { Details } from 'components/Details'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import './index.css'
 
@@ -164,6 +165,7 @@ export const MapPage = () => {
           <Layer {...(unclusteredPointLayer as LayerProps)} />
         </Source>
       </Map>
+      <Details />
     </div>
   )
 }

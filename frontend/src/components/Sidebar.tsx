@@ -56,7 +56,7 @@ const MobileSidebar = () => {
   const toggleDrawer = () => setVisible(!visible)
 
   return (
-    <div className="absolute top-4 left-4 z-50 w-full bg-transparent">
+    <div className="absolute left-4 top-4 z-50 bg-transparent">
       <div className="bg-transparent">
         <Button
           className="block h-8 rounded-md border border-gray-300 bg-white p-1.5 shadow-md sm:hidden"

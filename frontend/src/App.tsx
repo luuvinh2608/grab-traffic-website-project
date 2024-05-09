@@ -1,6 +1,6 @@
 import './App.css'
 import { Navigate, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
-import { MapPage, ChartPage, RankingPage, RootLayout } from './pages'
+import { MapPage, ChartPage, RankingPage, RootLayout, NotFound } from './pages'
 
 const App = () => {
   const router = createBrowserRouter(
@@ -10,6 +10,7 @@ const App = () => {
         <Route element={<MapPage />} path="/map" />
         <Route element={<ChartPage />} path="/chart" />
         <Route element={<RankingPage />} path="/ranking" />
+        <Route element={<NotFound />} path="*" />
       </Route>
     )
   )
