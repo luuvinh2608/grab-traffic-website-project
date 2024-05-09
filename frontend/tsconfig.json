@@ -23,12 +23,12 @@
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "@libs/*": ["./src/libs/*"],
-      "@components/*": ["./src/components/*"],
-      "@pages/*": ["./src/pages/*"],
-      "@types/*": ["./src/types/*"],
-      "@assets/*": ["./src/assets/*"],
-      "@data/*": ["./data/*"]
+      "libs/*": ["./src/libs/*"],
+      "components/*": ["./src/components/*"],
+      "pages/*": ["./src/pages/*"],
+      "types/*": ["./src/types/*"],
+      "assets/*": ["./src/assets/*"],
+      "data/*": ["./data/*"]
     }
   },
   "include": ["src"],

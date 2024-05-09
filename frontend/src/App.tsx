@@ -1,13 +1,15 @@
 import './App.css'
 import { Navigate, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
-import Home from './pages/Map'
+import { MapPage, ChartPage, RankingPage, RootLayout } from './pages'
 
-function App() {
+const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/">
+      <Route path="/" element={<RootLayout />}>
         <Route element={<Navigate to="/map" />} index />
-        <Route element={<Home />} path="/map" />
+        <Route element={<MapPage />} path="/map" />
+        <Route element={<ChartPage />} path="/chart" />
+        <Route element={<RankingPage />} path="/ranking" />
       </Route>
     )
   )

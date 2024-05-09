@@ -1,20 +1,29 @@
 /* eslint-disable no-console */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import React, { useState, useRef, useEffect } from 'react'
-import { Map, MapRef, Source, Layer, MapLayerMouseEvent } from 'react-map-gl'
-import districts from '../../../data/districts.json'
+import { useState, useRef } from 'react'
+import {
+  Map,
+  MapRef,
+  Source,
+  Layer,
+  MapLayerMouseEvent,
+  GeolocateControl,
+  LayerProps,
+  NavigationControl,
+  ScaleControl
+} from 'react-map-gl'
+import districts from 'data/districts.json'
 import { FeatureCollection, Point } from 'geojson'
-import { useAppDispatch, setShowDetails } from '../../libs/redux'
+import { useAppDispatch, setShowDetails } from 'libs/redux'
 import 'mapbox-gl/dist/mapbox-gl.css'
-import mapboxgl from 'mapbox-gl'
+import './index.css'
 
-export default function Home() {
-  const mapboxToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN
+export const MapPage = () => {
+  const mapboxToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
   const [selectedDistrict, setSelectedDistrict] = useState<string | null>(null)
   const mapRef = useRef<MapRef>(null)
-  const mapContainer = useRef<HTMLDivElement>(null)
+  const [isLoading, setIsLoading] = useState(true)
   const dispatch = useAppDispatch()
-  // const [isLoading, setIsLoading] = useState(true);
 
   const geojson: FeatureCollection<Point> = {
     type: 'FeatureCollection',
@@ -110,31 +119,51 @@ export default function Home() {
         '#8b0000',
         '#000000'
       ],
-      'line-width': 2
+      'line-width': 4
     }
   }
 
-  const map = useRef<mapboxgl.Map | null>(null)
-  const [lng, setLng] = useState(-70.9)
-  const [lat, setLat] = useState(42.35)
-  const [zoom, setZoom] = useState(9)
+  return (
+    <div className="flex h-full w-full flex-1">
+      <Map
+        ref={mapRef}
+        mapboxAccessToken={mapboxToken}
+        reuseMaps
+        style={{ width: '100%' }}
+        mapStyle="mapbox://styles/mapbox/standard"
+        initialViewState={{
+          latitude: 10.770496918,
+          longitude: 106.692330564,
+          zoom: 16,
+          pitch: 70,
+          bearing: 0
+        }}
+        maxZoom={22}
+        minZoom={16}
+        onLoad={() => {
+          setIsLoading(false)
+        }}
+        interactiveLayerIds={['unclustered-point']}
+        onClick={handleMapClick}
+        attributionControl={false}>
+        <ScaleControl maxWidth={100} unit="metric" />
+        <NavigationControl showCompass showZoom position="bottom-right" />
+        <GeolocateControl positionOptions={{ enableHighAccuracy: true }} trackUserLocation position="bottom-right" />
+        {isLoading && (
+          <div className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-white bg-opacity-75">
+            <div className="h-32 w-32 animate-spin rounded-full border-b-2 border-t-2 border-gray-900" />
+          </div>
+        )}
+        <Source id="traffic" type="vector" url="mapbox://mapbox.mapbox-traffic-v1">
+          <Layer {...(trafficLayer as LayerProps)} />
+        </Source>
 
-  useEffect(() => {
-    if (map.current) return // initialize map only once
-    map.current = new mapboxgl.Map({
-      container: mapContainer.current!,
-      style: 'mapbox://styles/mapbox/standard',
-      center: [lng, lat],
-      accessToken: mapboxToken!,
-      zoom: zoom
-    })
-
-    map.current.on('move', () => {
-      setLng(map?.current?.getCenter().lng ?? 0)
-      setLat(map?.current?.getCenter().lat ?? 0)
-      setZoom(map?.current?.getZoom() ?? 0)
-    })
-  })
-
-  return <div ref={mapContainer} className="map-container" style={{ width: '1000px', height: '800px' }} />
+        <Source id="districts" type="geojson" data={geojson} cluster={true} clusterMaxZoom={14} clusterRadius={50}>
+          <Layer {...(clusterLayer as LayerProps)} />
+          <Layer {...(clusterCountLayer as LayerProps)} />
+          <Layer {...(unclusteredPointLayer as LayerProps)} />
+        </Source>
+      </Map>
+    </div>
+  )
 }
