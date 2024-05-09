@@ -6,13 +6,16 @@ from collections import Counter
 # print(data.content.decode("unicode-escape"))
 
 
-# data = requests.post("http://127.0.0.1:5000/location/name/autofill", {"keyword": "bà"})
+# data = requests.post("http://127.0.0.1:5000/location/name/search", {"keyword": "ba"})
 # print(data.content.decode("unicode-escape"))
 
 # data = requests.post("http://127.0.0.1:5000/location/nearby", {"id": 11, "radius": 2, "number": 4})
 # print(data.content.decode("unicode-escape"))
 
-data = requests.post("http://127.0.0.1:5000/data/weekly", {"id": 1})
+# data = requests.get("http://127.0.0.1:5000/data/current/locationID=31")
+# print(data.content.decode("unicode-escape"))
+
+data = requests.post("http://127.0.0.1:5000/data/daily", {"id": 11})
 print(data.content.decode("unicode-escape"))
 
 # text = "2024-05-07"

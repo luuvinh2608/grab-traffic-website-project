@@ -30,4 +30,5 @@ except Exception as e:
 
 database = client["grab-engineering-project"]
 Place_LatLong_API = database["Place_LatLong_API"]
+data_summary = database["data_summary"]
 
