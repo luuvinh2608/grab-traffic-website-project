@@ -14,10 +14,14 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
     "antd": "^5.17.0",
+    "chart.js": "^4.4.2",
+    "dayjs": "^1.11.11",
     "dotenv": "^16.4.5",
     "mapbox-gl": "^3.3.0",
     "module-alias": "^2.2.3",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-countup": "^6.5.3",
     "react-dom": "^18.2.0",
     "react-icons": "^5.2.1",
     "react-map-gl": "^7.1.7",
@@ -28,6 +32,7 @@
     "redux-persist": "^6.0.0"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "@types/module-alias": "^2.0.4",
     "@types/node": "^20.12.10",
     "@types/react": "^18.2.66",

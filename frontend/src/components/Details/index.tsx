@@ -6,12 +6,8 @@ import StickyBox from 'react-sticky-box'
 import { AirQuality } from './AirQuality'
 import { Weather } from './Weather'
 
-const CustomTabPane: React.FC<{ key: string; children: React.ReactNode }> = ({ key, children }) => {
-  return (
-    <div key={key} className="flex flex-col gap-4">
-      {children}
-    </div>
-  )
+const CustomTabPane: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  return <div className="flex flex-col gap-4">{children}</div>
 }
 
 const tabsItems = [
@@ -75,7 +71,7 @@ export const Details = () => {
   const { showDetails, district } = useAppSelector((state) => state.page)
   const className =
     'bg-white transition-[margin-right] ease-in-out duration-500 fixed md:static top-0 bottom-0 right-0 z-40 p-4 w-full sm:w-[526px] text-black'
-  const appendClass = showDetails ? ' mr-0' : ' mr-[-9999px]'
+  const appendClass = showDetails ? ' mr-0' : ' hidden'
   return (
     <div className={`${className}${appendClass}`}>
       <div className="flex flex-col">

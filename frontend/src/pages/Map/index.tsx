@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import {
   Map,
   MapRef,
@@ -18,6 +18,7 @@ import { useAppDispatch, setShowDetails } from 'libs/redux'
 import { Details } from 'components/Details'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import './index.css'
+import reactIcon from 'assets/react.svg'
 
 export const MapPage = () => {
   const mapboxToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
@@ -123,6 +124,19 @@ export const MapPage = () => {
       'line-width': 4
     }
   }
+
+  useEffect(() => {
+    if (mapRef.current) {
+      // add an image for the camera icon after the map has loaded
+      if (mapRef.current.getMap()) {
+        const image = new Image()
+        image.src = reactIcon
+        image.onload = () => {
+          mapRef.current?.getMap().addImage('camera', image)
+        }
+      }
+    }
+  }, [mapRef, isLoading])
 
   return (
     <div className="flex h-full w-full flex-1">
