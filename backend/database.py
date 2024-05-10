@@ -32,3 +32,12 @@ database = client["grab-engineering-project"]
 Place_LatLong_API = database["Place_LatLong_API"]
 data_summary = database["data_summary"]
 
+# try:
+#   data = database["data_summary"].find_one({"id": 1})["2024-05-09"]["air_summary"]
+# except:
+#   database["data_summary"].update_one({"id": 1}, {
+#     "$set": {
+#       "2024-05-09.air_count": 0,
+#       "2024-05-09.air_summary":[0 for i in range(0, 24)]
+#     }
+#   })

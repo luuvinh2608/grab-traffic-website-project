@@ -1,6 +1,7 @@
 import os, requests, json
 from flask import Flask, request
 from flask_restful import Api, Resource
+from flask_cors import CORS, cross_origin
 from flask_pymongo import PyMongo
 from datetime import datetime, timedelta
 from collections import Counter
@@ -12,6 +13,13 @@ import math
 # set up app
 app = Flask(__name__)
 api = Api(app)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
+
+
+class hello(Resource):
+  def get(self):
+    return {"Welcome": "Hellow World"}
 
 
 class location_all(Resource):
@@ -314,8 +322,8 @@ class data_weekly(Resource):
       "lat": location["lat"],
       "long": location["long"],
       "date": str(today),
-      "traffic_data_hour": traffic_data_hour,
-      "air_data_hour": air_data_hour
+      "traffic_data_day": traffic_data_hour,
+      "air_data_day": air_data_hour
     }
 
 
@@ -334,6 +342,7 @@ class ranking_weekly(Resource):
     pass
 
 
+api.add_resource(hello, "/")
 api.add_resource(location_all, "/location/all")
 api.add_resource(location_name_search, "/location/name/search")
 api.add_resource(location_name_autofill, "/location/name/autofill")
