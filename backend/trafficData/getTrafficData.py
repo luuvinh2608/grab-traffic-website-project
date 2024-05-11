@@ -76,7 +76,7 @@ def getTrafficData(path, db, collection):
                 data_count_array = db["data_summary"].find_one({"id": path[0]})[today]["traffic_count"]
                 data_summary = db["data_summary"].find_one({"id": path[0]})[today]["traffic_summary"]
             
-            data_summary[hour] = data_summary[hour] + (
+            data_summary[hour] = data_summary[hour]*data_count + (
                 person*0.25 + car + (motorbike + bike) * 0.5 + (truck + bus) * 0.5
             )
             data_count += 1
