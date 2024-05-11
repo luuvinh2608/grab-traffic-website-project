@@ -6,12 +6,8 @@ import StickyBox from 'react-sticky-box'
 import { AirQuality } from './AirQuality'
 import { Weather } from './Weather'
 
-const CustomTabPane: React.FC<{ key: string; children: React.ReactNode }> = ({ key, children }) => {
-  return (
-    <div key={key} className="flex flex-col gap-4">
-      {children}
-    </div>
-  )
+const CustomTabPane: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  return <div className="flex flex-col gap-4">{children}</div>
 }
 
 const tabsItems = [
