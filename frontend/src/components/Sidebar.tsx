@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Button, Drawer, Menu } from 'antd'
 import { Link, useLocation } from 'react-router-dom'
 import { MenuOutlined } from '@ant-design/icons'
@@ -54,6 +54,10 @@ const DesktopSidebar = () => (
 const MobileSidebar = () => {
   const [visible, setVisible] = useState(false)
   const toggleDrawer = () => setVisible(!visible)
+  const location = useLocation()
+  useEffect(() => {
+    setVisible(false)
+  }, [location])
 
   return (
     <div className="absolute left-4 top-4 z-40 bg-transparent">
