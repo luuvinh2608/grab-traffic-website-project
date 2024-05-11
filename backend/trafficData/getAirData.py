@@ -63,8 +63,7 @@ def getAirData(path, db, collection):
         # Convert the UTC time to Saigon time
         hcm_time = time.astimezone(hcm_tz)
 
-        hcm_time = str(hcm_time)
-        insert_data = {"aqp": aqi, "components": components, "time": hcm_time}
+        insert_data = {"aqp": aqi, "components": components, "time": str(hcm_time)}
 
         db[collection].find_one_and_update(
             {"id": path[0]}, {"$push": {'air_data': insert_data}})
