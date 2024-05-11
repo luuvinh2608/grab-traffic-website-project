@@ -72,7 +72,7 @@ def getTrafficData(path, db, collection):
                     today + ".traffic_summary":[0 for i in range(0, 24)]
                     }
                 })
-                data_count = db["data_summary"].find_one({"id": path[0]})[today]["traffic_count"]
+                data_count = db["data_summary"].find_one({"id": path[0]})[today]["traffic_count"][hour]
                 data_count_array = db["data_summary"].find_one({"id": path[0]})[today]["traffic_count"]
                 data_summary = db["data_summary"].find_one({"id": path[0]})[today]["traffic_summary"]
             
