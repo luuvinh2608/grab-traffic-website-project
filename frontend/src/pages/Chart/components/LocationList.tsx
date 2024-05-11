@@ -8,7 +8,7 @@ const data = Array.from({ length: 10 }, (_, i) => ({
 }))
 
 export const LocationList = () => {
-  const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
+  const isMobile = useMediaQuery({ query: '(max-width: 767px)' })
   const isTablet = useMediaQuery({ query: '(max-width: 1024px)' })
   const [itemsPerPage, setItemsPerPage] = useState<number>(4)
   const [currentPage, setCurrentPage] = useState<number>(1)

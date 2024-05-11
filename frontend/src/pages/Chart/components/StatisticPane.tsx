@@ -13,8 +13,8 @@ export const StatisticPane = ({ className }: { className?: string }) => {
   return (
     <div className={className ?? ''}>
       <div className="flex w-full items-center justify-between">
-        <span className="text-lg font-medium">Rush hours</span>
-        <span className="text-lg text-red-500">7AM - 9AM</span>
+        <span className="font-medium md:text-lg">Rush hours</span>
+        <span className="text-red-500 md:text-lg">7AM - 9AM</span>
       </div>
       <h3 className="text-center text-xl font-bold uppercase">Average</h3>
       <div className="flex flex-col items-center justify-between space-y-4 rounded-md border border-red-200 px-8 py-2">

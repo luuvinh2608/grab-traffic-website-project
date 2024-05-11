@@ -84,3 +84,7 @@ interface TrafficAirDataRequest {
   id?: string
   date?: string
 }
+type Ranking<T = number> = {
+  location: string
+  value: T
+}
