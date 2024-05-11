@@ -71,16 +71,18 @@ def getAirData(path, db, collection):
         today = str(hcm_time.date())
         hour = hcm_time.hour
         try:
-            data_count = db["data_summary"].find_one({"id": path[0]})[today]["air_count"]
+            data_count = db["data_summary"].find_one({"id": path[0]})[today]["air_count"][hour]
+            data_count_array = db["data_summary"].find_one({"id": path[0]})[today]["air_count"]
             data_summary = db["data_summary"].find_one({"id": path[0]})[today]["air_summary"]
         except:
             db["data_summary"].update_one({"id": path[0]}, {
                 "$set": {
-                today + ".air_count": 0,
+                today + ".air_count": [0 for i in range(0, 24)],
                 today + ".air_summary":[0 for i in range(0, 24)]
                 }
             })
-            data_count = db["data_summary"].find_one({"id": path[0]})[today]["air_count"]
+            data_count_array = db["data_summary"].find_one({"id": path[0]})[today]["air_count"]
+            data_count = db["data_summary"].find_one({"id": path[0]})[today]["air_count"][hour]
             data_summary = db["data_summary"].find_one({"id": path[0]})[today]["air_summary"]
         
         data_summary[hour] = data_summary[hour]*data_count + max(
@@ -92,10 +94,11 @@ def getAirData(path, db, collection):
             calculate_aqi(insert_data["components"]["pm10"], "pm10"), # Convert from miligram/m3 to ppm
         )
         data_count += 1
+        data_count_array[hour] = data_count
         data_summary[hour] = data_summary[hour] / data_count
         db["data_summary"].update_one({"id": path[0]}, {
             "$set": {
-            today + ".air_count": data_count,
+            today + ".air_count": data_count_array,
             today + ".air_summary": data_summary
             }
         })

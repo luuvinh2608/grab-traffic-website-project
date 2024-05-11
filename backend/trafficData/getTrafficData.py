@@ -62,26 +62,28 @@ def getTrafficData(path, db, collection):
             today = str(timepoint.date())
             hour = timepoint.hour
             try:
-                data_count = db["data_summary"].find_one({"id": path[0]})[today]["traffic_count"]
+                data_count = db["data_summary"].find_one({"id": path[0]})[today]["air_count"][hour]
+                data_count_array = db["data_summary"].find_one({"id": path[0]})[today]["air_count"]
                 data_summary = db["data_summary"].find_one({"id": path[0]})[today]["traffic_summary"]
             except:
                 db["data_summary"].update_one({"id": path[0]}, {
                     "$set": {
-                    today + ".traffic_count": 0,
+                    today + ".traffic_count": [0 for i in range(0, 24)],
                     today + ".traffic_summary":[0 for i in range(0, 24)]
                     }
                 })
                 data_count = db["data_summary"].find_one({"id": path[0]})[today]["traffic_count"]
                 data_summary = db["data_summary"].find_one({"id": path[0]})[today]["traffic_summary"]
             
-            data_summary[hour] = data_summary[hour]*data_count + (
-                car + (motorbike + bike) * 0.5 + (truck + bus) * 0.5
+            data_summary[hour] = data_summary[hour] + (
+                person*0.25 + car + (motorbike + bike) * 0.5 + (truck + bus) * 0.5
             )
             data_count += 1
-            data_summary[hour] = data_summary[hour] / data_count
+            data_summary[hour] = data_summary[hour]/data_count
+            data_count_array[hour] = data_count
             db["data_summary"].update_one({"id": path[0]}, {
                 "$set": {
-                today + ".traffic_count": data_count,
+                today + ".traffic_count": data_count_array,
                 today + ".traffic_summary": data_summary
                 }
             })
