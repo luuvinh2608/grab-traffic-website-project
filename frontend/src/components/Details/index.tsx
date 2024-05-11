@@ -75,7 +75,7 @@ export const Details = () => {
   const { showDetails, district } = useAppSelector((state) => state.page)
   const className =
     'bg-white transition-[margin-right] ease-in-out duration-500 fixed md:static top-0 bottom-0 right-0 z-40 p-4 w-full sm:w-[526px] text-black'
-  const appendClass = showDetails ? ' mr-0' : ' mr-[-9999px]'
+  const appendClass = showDetails ? ' mr-0' : ' hidden'
   return (
     <div className={`${className}${appendClass}`}>
       <div className="flex flex-col">
