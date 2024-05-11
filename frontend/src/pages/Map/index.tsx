@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState, useRef, useEffect } from 'react'
 import {
   Map,
@@ -12,7 +10,8 @@ import {
   NavigationControl,
   ScaleControl
 } from 'react-map-gl'
-import districts from 'data/districts.json'
+import districts from '../../../data/districts.json'
+// import { locationService, Location } from '../../services/locationService';
 import { FeatureCollection, Point } from 'geojson'
 import { useAppDispatch, setShowDetails } from 'libs/redux'
 import { Details } from 'components/Details'
@@ -22,10 +21,33 @@ import reactIcon from 'assets/react.svg'
 
 export const MapPage = () => {
   const mapboxToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
-  const [selectedDistrict, setSelectedDistrict] = useState<string | null>(null)
+  const [, setSelectedDistrict] = useState<string | null>(null)
   const mapRef = useRef<MapRef>(null)
   const [isLoading, setIsLoading] = useState(true)
   const dispatch = useAppDispatch()
+
+  // useEffect(() => {
+  //   const fetchLocations = async () => {
+  //     try {
+  //       const data = await locationService.getAllLocations();
+  //       setLocations(data);
+  //       setIsLoading(false);
+  //     } catch (error: unknown) {
+  //       if (error instanceof Error) {
+  //         setError(error.message);
+  //       } else {
+  //         setError("Error fetching locations");
+  //       }
+  //       setIsLoading(false);
+  //     }
+  //   };
+
+  //   fetchLocations();
+  // }, []);
+
+  // if (error) {
+  //   return <div>Error: {error}</div>;
+  // }
 
   const geojson: FeatureCollection<Point> = {
     type: 'FeatureCollection',
@@ -94,7 +116,6 @@ export const MapPage = () => {
       const districtData = districts.find((d) => d.place === clickedFeature.properties?.place)
 
       if (districtData) {
-        console.log('District data:', districtData)
         zoomToDistrict(event, districtData)
         dispatch(setShowDetails({ showDetails: true, district: districtData.place }))
       }
