@@ -69,9 +69,8 @@ def getAirData(path, db, collection):
         db[collection].find_one_and_update(
             {"id": path[0]}, {"$push": {'air_data': insert_data}})
         
-        now = datetime.datetime.now()
-        today = str(now.date())
-        hour = now.hour
+        today = str(hcm_time.date())
+        hour = hcm_time.hour
         try:
             data_count = db["data_summary"].find_one({"id": path[0]})[today]["air_count"]
             data_summary = db["data_summary"].find_one({"id": path[0]})[today]["air_summary"]
