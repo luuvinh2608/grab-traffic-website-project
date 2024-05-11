@@ -62,8 +62,8 @@ def getTrafficData(path, db, collection):
             today = str(timepoint.date())
             hour = timepoint.hour
             try:
-                data_count = db["data_summary"].find_one({"id": path[0]})[today]["air_count"][hour]
-                data_count_array = db["data_summary"].find_one({"id": path[0]})[today]["air_count"]
+                data_count = db["data_summary"].find_one({"id": path[0]})[today]["traffic_count"][hour]
+                data_count_array = db["data_summary"].find_one({"id": path[0]})[today]["traffic_count"]
                 data_summary = db["data_summary"].find_one({"id": path[0]})[today]["traffic_summary"]
             except:
                 db["data_summary"].update_one({"id": path[0]}, {
@@ -73,6 +73,7 @@ def getTrafficData(path, db, collection):
                     }
                 })
                 data_count = db["data_summary"].find_one({"id": path[0]})[today]["traffic_count"]
+                data_count_array = db["data_summary"].find_one({"id": path[0]})[today]["traffic_count"]
                 data_summary = db["data_summary"].find_one({"id": path[0]})[today]["traffic_summary"]
             
             data_summary[hour] = data_summary[hour] + (
