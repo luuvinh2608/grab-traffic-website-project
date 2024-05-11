@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useMemo } from 'react'
 import {
   Map,
   MapRef,
@@ -10,8 +10,7 @@ import {
   NavigationControl,
   ScaleControl
 } from 'react-map-gl'
-import districts from '../../../data/districts.json'
-// import { locationService, Location } from '../../services/locationService';
+import { locationService } from '../../services/locationService'
 import { FeatureCollection, Point } from 'geojson'
 import { useAppDispatch, setShowDetails } from 'libs/redux'
 import { Details } from 'components/Details'
@@ -21,45 +20,37 @@ import reactIcon from 'assets/react.svg'
 
 export const MapPage = () => {
   const mapboxToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
-  const [, setSelectedDistrict] = useState<string | null>(null)
   const mapRef = useRef<MapRef>(null)
+  const [locations, setLocations] = useState<Location[]>([])
   const [isLoading, setIsLoading] = useState(true)
+  const [hasData, setHasData] = useState(false)
   const dispatch = useAppDispatch()
 
-  // useEffect(() => {
-  //   const fetchLocations = async () => {
-  //     try {
-  //       const data = await locationService.getAllLocations();
-  //       setLocations(data);
-  //       setIsLoading(false);
-  //     } catch (error: unknown) {
-  //       if (error instanceof Error) {
-  //         setError(error.message);
-  //       } else {
-  //         setError("Error fetching locations");
-  //       }
-  //       setIsLoading(false);
-  //     }
-  //   };
+  useEffect(() => {
+    locationService.getAllLocations().then((data) => {
+      setLocations(data)
+      setHasData(true)
+    })
+  }, [])
 
-  //   fetchLocations();
-  // }, []);
+  const geojson: FeatureCollection<Point> | null = useMemo(() => {
+    if (!locations || locations.length === 0) {
+      return null
+    }
 
-  // if (error) {
-  //   return <div>Error: {error}</div>;
-  // }
+    return {
+      type: 'FeatureCollection',
+      features: locations.map((location) => ({
+        type: 'Feature',
+        properties: { place: location.place, request: location.request },
+        geometry: {
+          type: 'Point',
+          coordinates: [parseFloat(location.long || '106.692330564'), parseFloat(location.lat || '10.770496918')]
+        }
+      }))
+    }
+  }, [locations])
 
-  const geojson: FeatureCollection<Point> = {
-    type: 'FeatureCollection',
-    features: districts.map((district) => ({
-      type: 'Feature',
-      properties: { place: district.place, request: district.request },
-      geometry: {
-        type: 'Point',
-        coordinates: [parseFloat(district.long), parseFloat(district.lat)]
-      }
-    }))
-  }
   const clusterLayer = {
     id: 'clusters',
     type: 'circle',
@@ -95,13 +86,12 @@ export const MapPage = () => {
     }
   }
 
-  const zoomToDistrict = (e: MapLayerMouseEvent, district: (typeof districts)[number]) => {
+  const zoomToDistrict = (e: MapLayerMouseEvent, location: Location) => {
     e.originalEvent.stopPropagation()
-    const { long, lat, place } = district
-    setSelectedDistrict(place)
+    const { long, lat } = location
     if (mapRef.current) {
       mapRef.current.flyTo({
-        center: [parseFloat(long), parseFloat(lat)],
+        center: [parseFloat(long || '10.770496918'), parseFloat(lat || '106.692330564')],
         zoom: 16
       })
     }
@@ -113,14 +103,12 @@ export const MapPage = () => {
 
     if (unclusteredPoints && unclusteredPoints.length > 0) {
       const clickedFeature = unclusteredPoints[0]
-      const districtData = districts.find((d) => d.place === clickedFeature.properties?.place)
+      const districtData = locations.find((d) => d.place === clickedFeature.properties?.place)
 
       if (districtData) {
         zoomToDistrict(event, districtData)
         dispatch(setShowDetails({ showDetails: true, district: districtData.place }))
       }
-    } else {
-      setSelectedDistrict(null)
     }
   }
 
@@ -194,11 +182,21 @@ export const MapPage = () => {
           <Layer {...(trafficLayer as LayerProps)} />
         </Source>
 
-        <Source id="districts" type="geojson" data={geojson} cluster={true} clusterMaxZoom={14} clusterRadius={50}>
-          <Layer {...(clusterLayer as LayerProps)} />
-          <Layer {...(clusterCountLayer as LayerProps)} />
-          <Layer {...(unclusteredPointLayer as LayerProps)} />
-        </Source>
+        {!isLoading && hasData && (
+          <>
+            <Source
+              id="districts"
+              type="geojson"
+              data={geojson || undefined}
+              cluster={true}
+              clusterMaxZoom={14}
+              clusterRadius={50}>
+              <Layer {...(clusterLayer as LayerProps)} />
+              <Layer {...(clusterCountLayer as LayerProps)} />
+              <Layer {...(unclusteredPointLayer as LayerProps)} />
+            </Source>
+          </>
+        )}
       </Map>
       <Details />
     </div>
