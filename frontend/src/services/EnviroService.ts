@@ -1,41 +1,44 @@
-import axios from 'axios'
+import AxiosHttpService from './AxiosHttpService'
 
-const API_BASE_URL: string = import.meta.env.VITE_API_BASE_URL || ''
-
-export interface TrafficAirDataService {
+export interface IEnviroService {
   getCurrentData(request: TrafficAirDataRequest): Promise<TrafficAirData>
   getDailyData(request: TrafficAirDataRequest): Promise<TrafficAirData[]>
   getWeeklyData(request: TrafficAirDataRequest): Promise<TrafficAirData[]>
 }
 
-export const trafficAirDataService: TrafficAirDataService = {
+export class EnviroService implements IEnviroService {
+  private axiosService = AxiosHttpService.getInstance()
+  private static instance: EnviroService
+  private constructor() {}
+
+  static getInstance(): EnviroService {
+    if (!EnviroService.instance) {
+      EnviroService.instance = new EnviroService()
+    }
+    return EnviroService.instance
+  }
+
   async getCurrentData(request: TrafficAirDataRequest): Promise<TrafficAirData> {
     try {
-      const url: string = `${API_BASE_URL}/data/current/locationID=${request.id}`
-      const response = await axios.get<TrafficAirDataResponse>(url)
-      const finalData: TrafficAirData = {
-        air_data: response.data.air_data,
-        traffic_data: response.data.traffic_data
+      const response = await this.axiosService.get<TrafficAirDataResponse>(`/data/current/locationID=${request.id}`)
+      return {
+        air_data: response.air_data,
+        traffic_data: response.traffic_data
       }
-      return finalData
     } catch (error) {
       console.error('Error fetching traffic and air data:', error)
       throw error
     }
-  },
+  }
 
   async getDailyData(request: TrafficAirDataRequest): Promise<TrafficAirData[]> {
     try {
-      const url: string = `${API_BASE_URL}/data/daily`
-      const formData = new FormData()
-      formData.append('id', request.id || '')
-      formData.append('date', request.date || '')
-
-      const response = await axios.post<TrafficAirDataResponse>(url, formData)
-
-      const finalData: TrafficAirData[] = response.data.traffic_data_hour
+      const response = await this.axiosService.get<TrafficAirDataResponse>(
+        `/data/daily/locationID=${request.id}&date=${request.date}`
+      )
+      const finalData: TrafficAirData[] = response.traffic_data_hour
         ?.map((trafficData: TrafficData, index: number) => {
-          const airData = response.data.air_data_hour?.[index]
+          const airData = response.air_data_hour?.[index]
           if (airData) {
             return {
               air_data: airData,
@@ -49,20 +52,16 @@ export const trafficAirDataService: TrafficAirDataService = {
       console.error('Error fetching traffic and air data daily:', error)
       throw error
     }
-  },
+  }
 
   async getWeeklyData(request: TrafficAirDataRequest): Promise<TrafficAirData[]> {
     try {
-      const url: string = `${API_BASE_URL}/data/weekly`
-      const formData = new FormData()
-      formData.append('id', request.id || '')
-      formData.append('date', request.date || '')
-
-      const response = await axios.post<TrafficAirDataResponse>(url, formData)
-
-      const finalData: TrafficAirData[] = response.data.traffic_data_day
+      const response = await this.axiosService.get<TrafficAirDataResponse>(
+        `/data/weekly/locationID=${request.id}&date=${request.date}`
+      )
+      const finalData: TrafficAirData[] = response.traffic_data_day
         ?.map((trafficData: TrafficData, index: number) => {
-          const airData = response.data.air_data_day?.[index]
+          const airData = response.air_data_day?.[index]
           if (airData) {
             return {
               air_data: airData,

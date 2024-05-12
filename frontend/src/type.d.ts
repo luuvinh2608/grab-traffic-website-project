@@ -1,4 +1,4 @@
-interface Location {
+type MapLocation = {
   id: number
   place: string
   lat?: string
@@ -7,29 +7,26 @@ interface Location {
   distance?: number
 }
 
-interface LocationResponse {
+type LocationResponse = {
   count: number
-  time?: string
+  time?: string // time of data collection
   keyword?: string
   param?: {
     radius: string
     number: string
   }
-  center?: {
-    id: number
-    place: string
-  }
-  locations: Location[]
+  center?: MapLocation
+  locations: MapLocation[]
 }
 
-interface LocationRequest {
+type LocationRequest = {
   id?: string
   keyword?: string
   radius?: string
   number?: string
 }
 
-interface TrafficData {
+type TrafficData = {
   day?: number
   hour?: number
   car: number
@@ -43,7 +40,7 @@ interface TrafficData {
   trafic_quality_index?: number
 }
 
-interface AirData {
+type AirData = {
   day?: number
   hour?: number
   co: number
@@ -59,12 +56,12 @@ interface AirData {
   air_quality_index?: number
 }
 
-interface TrafficAirData {
+type TrafficAirData = {
   traffic_data?: TrafficData
   air_data?: AirData
 }
 
-interface TrafficAirDataResponse {
+type TrafficAirDataResponse = {
   id: number
   name: string
   lat: string
@@ -80,11 +77,18 @@ interface TrafficAirDataResponse {
   air_data_day?: AirData[]
 }
 
-interface TrafficAirDataRequest {
+type TrafficAirDataRequest = {
   id?: string
   date?: string
 }
 type Ranking<T = number> = {
   location: string
   value: T
+}
+
+type RecordValue = string | Blob | File | number | boolean | null
+
+interface HttpService {
+  get<T>(url: string): Promise<T>
+  post<T, U extends Record<string, RecordValue>>(url: string, data?: U): Promise<T>
 }
