@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { useState, useRef, useEffect, useMemo } from 'react'
 import {
   Map,
@@ -10,35 +11,31 @@ import {
   NavigationControl,
   ScaleControl
 } from 'react-map-gl'
-import { LocationService } from 'services'
 import { FeatureCollection, Point } from 'geojson'
-import { useAppDispatch, setShowDetails } from 'libs/redux'
+import { useAppDispatch, setShowDetails, useInitLocationData, useAppSelector } from 'libs/redux'
 import { Details } from 'components/Details'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import './index.css'
 import reactIcon from 'assets/react.svg'
 import { Spin } from 'antd'
 import { distance, point } from '@turf/turf'
+import { setCurrentLocationID } from 'libs/redux/sliceData'
+
 export const MapPage = () => {
   const mapboxToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
   const mapRef = useRef<MapRef>(null)
-  const [locations, setLocations] = useState<MapLocation[]>([])
+  const locations = useAppSelector((state) => state.data.mapLocation)
   const [isLoading, setIsLoading] = useState(true)
   const [hasData, setHasData] = useState(false)
   const dispatch = useAppDispatch()
-  const locationService = LocationService.getInstance()
+
+  useInitLocationData()
 
   useEffect(() => {
-    locationService
-      .getAllLocations()
-      .then((data) => {
-        setLocations(data)
-        setHasData(true)
-      })
-      .catch((error) => {
-        console.error(error)
-      })
-  }, [])
+    if (locations.length > 0) {
+      setHasData(true)
+    }
+  }, [locations])
 
   const geojson: FeatureCollection<Point> | null = useMemo(() => {
     if (!locations || locations.length === 0) {
@@ -122,6 +119,8 @@ export const MapPage = () => {
       if (districtData) {
         zoomToDistrict(event, districtData)
         dispatch(setShowDetails({ showDetails: true, district: districtData.place }))
+        console.log('District ID: ', districtData.id)
+        dispatch(setCurrentLocationID(districtData.id ?? ''))
       }
     }
   }
