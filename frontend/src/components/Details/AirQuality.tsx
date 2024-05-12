@@ -5,7 +5,7 @@ export const AirQuality = () => {
   const airData = useAppSelector((state) => state.data.currentAirData)
 
   const getAirQualityColor = (airQuality: number) => {
-    const colorScale = chroma.scale(['red', 'yellow', 'green']).domain([1, 3, 5])
+    const colorScale = chroma.scale(['green', 'yellow', 'red']).domain([1, 3, 5])
     return colorScale(airQuality).css()
   }
 
