@@ -1,10 +1,12 @@
+/* eslint-disable no-console */
 import {
   useAppDispatch,
   useAppSelector,
   setShowDetails,
   useInitEnvironData,
   setCurrentAirData,
-  setCurrentTrafficData
+  setCurrentTrafficData,
+  setCurrentLocationID
 } from 'libs/redux'
 import React, { useEffect, useState } from 'react'
 import { FaChevronRight } from 'react-icons/fa'
@@ -17,12 +19,12 @@ const CustomTabPane: React.FC<{ children: React.ReactNode }> = ({ children }) =>
   return <div className="flex flex-col gap-4">{children}</div>
 }
 
-const tabsItems = (locationId: number) => [
+const tabsItems = [
   {
     key: 'airq',
     label: 'Air Quality',
     children: (
-      <CustomTabPane key={locationId}>
+      <CustomTabPane key="airq">
         <AirQuality />
         <Weather />
       </CustomTabPane>
@@ -66,7 +68,6 @@ const CustomTabBar: TabsProps['renderTabBar'] = (props, DefaultTabBar) => {
 export const Details = () => {
   const dispatch = useAppDispatch()
   const { showDetails, district } = useAppSelector((state) => state.page)
-  const locationId = useAppSelector((state) => state.data.currentLocationID)
   const [isLoading, setIsLoading] = useState(true)
   const [trafficData, airData] = useAppSelector((state) => [state.data.currentTrafficData, state.data.currentAirData])
   const className =
@@ -77,11 +78,13 @@ export const Details = () => {
 
   useEffect(() => {
     if (trafficData && airData) {
+      console.log('Traffic Data', trafficData)
+      console.log('Air Data', airData)
       setIsLoading(false)
     } else if (!showDetails) {
       setIsLoading(true)
     }
-  }, [trafficData, airData, showDetails, dispatch, isLoading])
+  }, [trafficData, airData, showDetails])
 
   return (
     <div className={`${className}${appendClass}`}>
@@ -97,17 +100,16 @@ export const Details = () => {
             <button
               onClick={() => {
                 dispatch(setShowDetails({ showDetails: false, district: null }))
-                dispatch(setCurrentAirData({} as AirData))
-                dispatch(setCurrentTrafficData({} as TrafficData))
+                dispatch(setCurrentAirData(undefined))
+                dispatch(setCurrentTrafficData(undefined))
+                dispatch(setCurrentLocationID(-1))
               }}
               className="text-xl font-bold">
               <FaChevronRight />
             </button>
           </div>
 
-          {!isLoading && (
-            <Tabs defaultActiveKey="airq" centered items={tabsItems(locationId)} renderTabBar={CustomTabBar} />
-          )}
+          {!isLoading && <Tabs defaultActiveKey="airq" centered items={tabsItems} renderTabBar={CustomTabBar} />}
         </div>
       </Spin>
     </div>

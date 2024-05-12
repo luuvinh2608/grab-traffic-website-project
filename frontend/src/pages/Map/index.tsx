@@ -32,7 +32,7 @@ export const MapPage = () => {
   useInitLocationData()
 
   useEffect(() => {
-    if (locations.length > 0) {
+    if (locations.length > 0 || locations) {
       setHasData(true)
     }
   }, [locations])
