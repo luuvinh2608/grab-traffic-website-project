@@ -23,7 +23,7 @@ export const TestPage = () => {
     }
 
     fetchLocations()
-  }, [])
+  }, [enviroService])
 
   if (error) {
     return <div>Error: {error}</div>

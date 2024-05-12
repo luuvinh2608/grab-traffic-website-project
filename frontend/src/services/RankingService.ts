@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-interface */
 import AxiosHttpService from './AxiosHttpService'
 
 export interface IRankingService {}
